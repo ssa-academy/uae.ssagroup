@@ -1,5 +1,14 @@
 <?php
 
+function uaessagroup_menus() {
+    $locations = array(
+        'primary' => 'Primary navbar'
+    );
+    register_nav_menus($locations);
+}
+
+add_action('init', 'uaessagroup_menus');
+
 function uaessagroup_files() {
     // wp_enqueue_style('uaessagroup_main_styles', get_stylesheet_uri());
 

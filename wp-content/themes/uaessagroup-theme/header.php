@@ -4,26 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <?php wp_head(); ?>
   </head>
   <body class="overflow-x-hidden">
-    <nav class="container relative mx-auto p-6">
+    <nav class="mx-auto <?= is_front_page() ? 'container absolute left-1/2 -translate-x-1/2' : 'bg-customDark'?>">
       <!-- Flex Container For Nav Items -->
-      <div class="flex items-center justify-between space-x-20 my-6">
+      <div class="container flex items-center justify-between space-x-20 p-5">
         <!-- Logo -->
-         <div class="z-30">
-          <img src="<?php echo get_template_directory_uri(); ?>/src/images/ssa-logo.png" alt="" id="logo" />
-         </div>
+        <div class="z-30">
+          <img class="h-14 inline" src="<?php echo get_template_directory_uri(); ?>/src/images/ssa-logo.png" alt="" id="logo" />
+        </div>
+
+        <div class="lg:hidden">
+          <button class="text-3xl text-white focus:outline-none">&#9776;</button>
+        </div>
 
          <!-- Menu Items -->
-          <div class="hidden items-center space-x-10 uppercase text-grayishBlue md:flex">
-            <a href="#features" class="tracking-widest hover:text-softBlue">About us</a>
-            <a href="#services" class="tracking-widest hover:text-softBlue">Services</a>
-            <a href="#events" class="tracking-widest hover:text-softBlue">Events</a>
-            <a href="#newsroom" class="tracking-widest hover:text-softBlue">Newsroom</a>
-            <a href="#contact" class="tracking-widest hover:text-softBlue">Contact</a>
-            <a href="" class="px-8 py-2 text-white bg-softBlue border-2 border-softBlue rounded-lg shadow-md hover:text-softBlue hover:bg-white">Login</a>
-          </div>
+        <div class="hidden items-center text-sm space-x-20 uppercase text-white lg:flex font-navfont">
+
+            <!-- Dynamic menu from worpress admin -->
+            <!-- <?php 
+              wp_nav_menu(
+                array(
+                  'menu' => 'primary',
+                  'container' => '',
+                  'theme_location' => 'primary',
+                  'items_wrap' => '<div id="" class="hidden items-center text-sm space-x-20 uppercase text-white lg:flex font-navfont">%3$s</div>'
+                )
+              )
+            ?> -->
+
+            <a href="<?php echo esc_url( home_url() ); ?>" class="tracking-widest hover:text-customYellow <?= is_front_page() ? 'text-customYellow' : ''?>">About</a>
+            <a href="services" class="tracking-widest hover:text-customYellow <?= is_page('Services') ? 'text-customYellow' : ''?>">Services</a>
+            <a href="articles" class="tracking-widest hover:text-customYellow <?= is_page('Articles') ? 'text-customYellow' : ''?>">Articles</a>
+            <a href="contact" class="tracking-widest hover:text-customYellow <?= is_page('Contact') ? 'text-customYellow' : ''?>">Contact</a>
+        </div>
       </div>
     </nav>
   
