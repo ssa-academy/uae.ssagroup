@@ -8,20 +8,25 @@
     <?php wp_head(); ?>
   </head>
   <body class="overflow-x-hidden">
-    <nav class="mx-auto <?= is_front_page() ? 'container absolute left-1/2 -translate-x-1/2' : 'bg-customDark'?>">
+    <nav class="mx-auto <?= is_front_page() ? 'w-full absolute left-1/2 -translate-x-1/2' : 'bg-customDark'?>">
       <!-- Flex Container For Nav Items -->
-      <div class="container flex items-center justify-between space-x-20 p-5">
+      <div class="lg:container flex items-center justify-between space-x-20 p-5">
         <!-- Logo -->
-        <div class="z-30">
+        <div class="z-auto">
           <img class="h-14 inline" src="<?php echo get_template_directory_uri(); ?>/src/images/ssa-logo.png" alt="" id="logo" />
         </div>
 
-        <div class="lg:hidden">
-          <button class="text-3xl text-white focus:outline-none">&#9776;</button>
+        <!-- Hamburger button -->
+        <div class="lg:hidden cursor-pointer relative h-8 w-8 z-50">
+          <button id="hamburger-btn" class="text-3xl text-white focus:outline-none">
+          <div
+            class="absolute top-4 -mt-0.5 h-[0.18rem] w-8 rounded bg-white transition-all duration-500 before:absolute before:h-[0.18rem] before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-[0.18rem] after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']">
+          </div>
+          </button>
         </div>
 
          <!-- Menu Items -->
-        <div class="hidden items-center text-sm space-x-20 uppercase text-white lg:flex font-navfont">
+        <div class="hidden items-center lg:flex font-navfont">
 
             <!-- Dynamic menu from worpress admin -->
             <!-- <?php 
@@ -35,10 +40,63 @@
               )
             ?> -->
 
-            <a href="<?php echo esc_url( home_url() ); ?>" class="tracking-widest hover:text-customYellow <?= is_front_page() ? 'text-customYellow' : ''?>">About</a>
-            <a href="services" class="tracking-widest hover:text-customYellow <?= is_page('Services') ? 'text-customYellow' : ''?>">Services</a>
-            <a href="articles" class="tracking-widest hover:text-customYellow <?= is_page('Articles') ? 'text-customYellow' : ''?>">Articles</a>
-            <a href="contact" class="tracking-widest hover:text-customYellow <?= is_page('Contact') ? 'text-customYellow' : ''?>">Contact</a>
+          <ul class="flex item-center space-x-20 text-white">
+            <li>
+              <a href="<?php echo esc_url( home_url() ); ?>" class="hover:text-customYellow <?= is_front_page() ? 'text-customYellow font-[700]' : ''?>">About</a>
+            </li>
+            <li id="services-menu" class="relative">
+              <a class="hover:text-customYellow cursor-pointer <?= is_page('Consulting') ? 'text-customYellow font-[700]' : ''?>">Services</a>
+              <!-- services submenu -->
+              <div id="services-submenu" class="absolute hidden bg-white rounded-md px-4 w-44 text-black mt-2 origin-top animate-open-menu">
+                <ul>
+                  <li class="py-2 my-2 border-b-2">
+                    <a href="consulting">Consulting</a>
+                  </li>
+                  <li class="py-2 my-2">
+                    <a href="">Training</a>
+                  </li>
+                  <li class="py-2 my-2 border-t-2">
+                    <a href="">Innovations</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="articles" class="hover:text-customYellow <?= is_page('Articles') ? 'text-customYellow font-[700]' : ''?>">Articles</a>
+            </li>
+            <li>
+              <a href="contact" class="hover:text-customYellow <?= is_page('Contact') ? 'text-customYellow font-[700]' : ''?>">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="fixed top-0 bottom-0 bg-customDark w-full h-screen overflow-y-auto text-3xl hidden origin-top animate-open-menu flex-col lg:hidden z-10">
+        <div class="grid"> 
+          <div class="h-[96px]"></div>
+          <div class="min-h-max text-[18px] font-[700] leading-[28px]" aria-label="mobile">
+            <ul class="grid">
+              <li class="p-10 md:pl-20 text-white border-b-2 border-customGray">
+                <a href="<?php echo esc_url( home_url() ); ?>">About</a>
+              </li>
+              <li id="services-menu-mobile" class="p-10 md:pl-20 text-white border-b-2 border-customGray">
+                <a>Services <button class="inline-flex float-end" onclick="this.classList.toggle('rotate-180')"><i class="fas fa-chevron-down "></i></button></a>
+                <div id="services-submenu-mobile" class="font-normal p-5 hidden origin-top animate-open-menu">
+                  <ul class="space-y-1">
+                    <li><a href="consulting">Consulting</a></li>
+                    <li><a href="">Training</a></li>
+                    <li><a href="">Innovations</a>I</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="p-10 md:pl-20 text-white border-b-2 border-customGray">
+                <a href="articles">Articles</a>
+              </li>
+              <li class="p-10 md:pl-20 text-white border-b-2 border-customGray">
+                <a href="contact">Contact</a>
+              </li>
+            </ul>        
+          </div>
         </div>
       </div>
     </nav>
