@@ -1,19 +1,30 @@
 const initApp = () => {
     const hamburgBtn = document.getElementById('hamburger-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
     const servicesMenuBtn = document.getElementById('services-menu');
     const servicesMenuMobile = document.getElementById('services-menu-mobile');
     const footerDropdown = document.getElementById('footer-dropdown');
+    const accordions = document.querySelectorAll('#accordion');
 
-    // const toggleMenu = () => {
-    //     mobileMenu.classList.toggle('hidden');
-    //     mobileMenu.classList.toggle('flex');
-    //     hamburgBtn.classList.toggle('toggle-btn');
-    //     document.body.classList.toggle('overflow-hidden');
-    // }
+    // accordions
+    accordions.forEach((accordion)=>{
+        const btn = accordion.querySelector('#accordion-title');
+        btn.addEventListener('click', () => {
+            const content = accordion.querySelector('#accordion-content')
+            const carret = accordion.querySelector('#accordion-carret')
+            accordions.forEach((item)=>{             
+                if (item !== accordion){
+                    const content = item.querySelector('#accordion-content')
+                    const carret = item.querySelector('#accordion-carret')
+                    content.classList.remove('max-h-screen')
+                    carret.classList.remove('rotate-180')
+                }
+            })
+            content.classList.toggle('max-h-screen');
+            carret.classList.toggle('rotate-180');
+        })
+    })
 
-    // hamburgBtn.addEventListener('click', toggleMenu);
-
+    //dropdown menus
     const openDropdownElements = (dropdownElementID, toggledClass = 'block') => {
         const dropdownelement = document.getElementById(dropdownElementID)
         dropdownelement.classList.toggle('hidden');
@@ -40,6 +51,7 @@ const initApp = () => {
         nextArrow : '.next-button'
     });   
     
+    //article slider
     $('.article-slider').slick({
         lazyLoad : 'ondemand',
         slidesToShow : 3,

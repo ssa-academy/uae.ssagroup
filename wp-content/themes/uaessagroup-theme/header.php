@@ -8,7 +8,7 @@
     <?php wp_head(); ?>
   </head>
   <body class="overflow-x-hidden">
-    <nav class="mx-auto <?= is_front_page() ? 'w-full absolute left-1/2 -translate-x-1/2' : 'bg-customDark'?>">
+    <nav class="mx-auto <?= is_front_page() || is_page('Training')? 'w-full absolute left-1/2 -translate-x-1/2' : 'bg-customDark'?>">
       <!-- Flex Container For Nav Items -->
       <div class="lg:container flex items-center justify-between space-x-20 p-5">
         <!-- Logo -->
@@ -45,7 +45,7 @@
               <a href="<?php echo esc_url( home_url() ); ?>" class="hover:text-customYellow <?= is_front_page() ? 'text-customYellow font-[700]' : ''?>">About</a>
             </li>
             <li id="services-menu" class="relative">
-              <a class="hover:text-customYellow cursor-pointer <?= is_page('Consulting') ? 'text-customYellow font-[700]' : ''?>">Services</a>
+              <a class="hover:text-customYellow cursor-pointer <?= is_page('Consulting') || is_page('Training') ? 'text-customYellow font-[700]' : ''?>">Services</a>
               <!-- services submenu -->
               <div id="services-submenu" class="absolute hidden bg-white rounded-md px-4 w-44 text-black mt-2 origin-top animate-open-menu">
                 <ul>
@@ -53,10 +53,10 @@
                     <a href="consulting">Consulting</a>
                   </li>
                   <li class="py-2 my-2">
-                    <a href="">Training</a>
+                    <a href="training">Training</a>
                   </li>
                   <li class="py-2 my-2 border-t-2">
-                    <a href="">Innovations</a>
+                    <a href="https://innovations.ssagroup.com/" target="_blank">Innovations</a>
                   </li>
                 </ul>
               </div>
@@ -81,11 +81,11 @@
               </li>
               <li id="services-menu-mobile" class="p-10 md:pl-20 text-white border-b-2 border-customGray">
                 <a>Services <button class="inline-flex float-end" onclick="this.classList.toggle('rotate-180')"><i class="fas fa-chevron-down "></i></button></a>
-                <div id="services-submenu-mobile" class="font-normal p-5 hidden origin-top animate-open-menu">
-                  <ul class="space-y-1">
+                <div id="services-submenu-mobile" class="font-normal pt-5 px-5 hidden origin-top animate-open-menu">
+                  <ul class="space-y-3">
                     <li><a href="consulting">Consulting</a></li>
-                    <li><a href="">Training</a></li>
-                    <li><a href="">Innovations</a>I</li>
+                    <li><a href="training">Training</a></li>
+                    <li><a href="https://innovations.ssagroup.com/" target="_blank">Innovations</a></li>
                   </ul>
                 </div>
               </li>
