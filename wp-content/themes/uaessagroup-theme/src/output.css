@@ -1075,7 +1075,6 @@ video {
 
 .max-w-6xl{
   max-width: 72rem;
-
 }
 
 .flex-shrink{
@@ -2398,13 +2397,12 @@ video {
   padding-top: 2.5rem;
 }
 
-.pt-5{
-  padding-top: 1.25rem;
-}
-
 .pt-16{
   padding-top: 4rem;
+}
 
+.pt-5{
+  padding-top: 1.25rem;
 }
 
 .text-left{
@@ -3448,10 +3446,6 @@ video {
 
   .lg\:max-w-\[980px\]{
     max-width: 980px;
-  }
-
-  .lg\:max-w-\[471px\]{
-    max-width: 471px;
   }
 
   .lg\:shrink{

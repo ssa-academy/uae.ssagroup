@@ -91,6 +91,8 @@
               </li>
               <li class="p-10 md:pl-20 text-white border-b-2 border-customGray">
                 <a href="articles">Articles</a>
+                <!-- dont delete the commendted a tag -->
+                <!-- <a href="<?php //if (get_post_type() == 'post') echo 'class="hover:customYellow"'?>">Articles</a> -->
               </li>
               <li class="p-10 md:pl-20 text-white border-b-2 border-customGray">
                 <a href="contact">Contact</a>

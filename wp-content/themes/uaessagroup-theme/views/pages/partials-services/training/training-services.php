@@ -31,14 +31,25 @@
     ]   
 ?>
 
+<?php
 
-<section class="w-full min-h-max bg-customWhite py-10">
-    <div class="container grid md:grid-cols-3 gap-5 auto-rows-fr xl:px-14 px-5">
-        <?php foreach($services as $service):?>  
-            <div class="p-2">
-                <img src="<?= $service['img']?>" class="md:max-h-64 object-cover" alt="">
-                <p class="text-[22px] font-[700] leading-[30px] text-center p-3"><?= $service['title'] ?></p>
-            </div>
-        <?php endforeach ?>
-    </div>
-</section>
+    $servicepageTrainings = new WP_Query(array(
+        'post_type' => 'training'
+    ));
+
+        while($servicepageTrainings->have_posts()) {
+            $servicepageTrainings->the_post();
+?>
+            <section class="w-full min-h-max bg-customWhite py-10">
+                <div class="container grid md:grid-cols-3 gap-5 auto-rows-fr xl:px-14 px-5">
+                    
+                    <div class="p-2">
+                        <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url(); ?>" class="md:max-h-64 object-cover" alt=""></a>
+                        <p class="text-[22px] font-[700] leading-[30px] text-center p-3"><?php the_title(); ?></p>
+                    </div>
+                </div>
+            </section>
+<?php  } //end of while loop
+
+    wp_reset_postdata();
+?>
