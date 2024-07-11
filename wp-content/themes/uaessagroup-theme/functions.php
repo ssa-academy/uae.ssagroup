@@ -20,3 +20,10 @@ function uaessagroup_files() {
 }
 
 add_action('wp_enqueue_scripts', 'uaessagroup_files');
+
+function uaessagroup_features() {
+    add_theme_support('title-tag');
+    add_theme_support('post-thumbnails');
+}
+
+add_action('after_setup_theme', 'uaessagroup_features');
