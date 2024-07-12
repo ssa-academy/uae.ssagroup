@@ -6,7 +6,6 @@ function uaessagroup_menus() {
     );
     register_nav_menus($locations);
 }
-
 add_action('init', 'uaessagroup_menus');
 
 function uaessagroup_files() {
@@ -18,12 +17,10 @@ function uaessagroup_files() {
     wp_enqueue_script('sclick_js','https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array(), null, true);
     wp_enqueue_script('main', get_template_directory_uri() . '/src/js/main.js', array(), null, true);
 }
-
 add_action('wp_enqueue_scripts', 'uaessagroup_files');
 
 function uaessagroup_features() {
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
 }
-
 add_action('after_setup_theme', 'uaessagroup_features');
