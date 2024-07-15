@@ -884,6 +884,13 @@ video {
   -webkit-line-clamp: 3;
 }
 
+.line-clamp-1{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
 .line-clamp-none{
   overflow: visible;
   display: block;
@@ -1015,6 +1022,10 @@ video {
   max-height: 3rem;
 }
 
+.max-h-24{
+  max-height: 6rem;
+}
+
 .max-h-32{
   max-height: 8rem;
 }
@@ -1080,12 +1091,21 @@ video {
   width: 100%;
 }
 
+.min-w-14{
+  min-width: 3.5rem;
+}
+
 .max-w-3xl{
   max-width: 48rem;
 }
 
 .max-w-6xl{
   max-width: 72rem;
+}
+
+.max-w-max{
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .flex-shrink{
@@ -1325,6 +1345,10 @@ video {
 
 .list-outside{
   list-style-position: outside;
+}
+
+.list-disc{
+  list-style-type: disc;
 }
 
 .appearance-none{
@@ -1652,6 +1676,14 @@ video {
 
 .gap-2{
   gap: 0.5rem;
+}
+
+.gap-20{
+  gap: 5rem;
+}
+
+.gap-3{
+  gap: 0.75rem;
 }
 
 .gap-5{
@@ -2166,6 +2198,11 @@ video {
   border-style: none;
 }
 
+.border-customDark{
+  --tw-border-opacity: 1;
+  border-color: rgb(18 18 18 / var(--tw-border-opacity));
+}
+
 .border-customGray{
   --tw-border-opacity: 1;
   border-color: rgb(45 51 53 / var(--tw-border-opacity));
@@ -2191,6 +2228,11 @@ video {
   background-color: rgb(31 31 31 / var(--tw-bg-opacity));
 }
 
+.bg-customGray2{
+  --tw-bg-opacity: 1;
+  background-color: rgb(176 175 173 / var(--tw-bg-opacity));
+}
+
 .bg-customWhite{
   --tw-bg-opacity: 1;
   background-color: rgb(250 249 246 / var(--tw-bg-opacity));
@@ -2202,7 +2244,7 @@ video {
 }
 
 .bg-hero-pattern{
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url('https://s3-alpha-sig.figma.com/img/04a0/cf9c/8736a0f9b272b299ee363c98bee53ea5?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=meua666O4tb9CMhfAHzE4Po4QTVG0Du68L7z6LQdJtrcgoqjQFi9Zshp8LHTIZ42BB~vuOAC42vM7hw3KoLfdOgtAUjxV5RaEuNw2sbNbaJ73fhkM6Xdo5-HSyxSTd1ZlBgQllWQcwrRs7A6qpaRdBi1D8dAhKwj~vQm9mmToRg9TvevtgWXsJ12fGsf8ETkJ7VIAjbmpCXiQRLr58NRZVcVz45JqbZuUHvkmbNMRJ3oVFZLtknP3Zd1M3yOQaLNWNeqIOF1trjOpZENXGonR~4nAjNsoy3x27y6PV24Y~CC6tE-3WyRnXE~e2Qh1gcuIS0W04t6c8~ffZ3kCxnwHg__');
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url('https://s3-alpha-sig.figma.com/img/04a0/cf9c/8736a0f9b272b299ee363c98bee53ea5?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZCmxhUECQLFOpXcus4KPm8AOEZtwqeSND7pgx-gkAu6ZRyDR5zJE0ChEHE1-PT0tK5KqQC50nsnUJbrQuB47NFnNqgBvbbkNJ114KIAUoGLsgTGOWDw2A5GpcTwt0xnaVXl1W8mYnZlx9n6nJtEJm~vMa5FJv-wOXZJwzRRZRuLpt9SM5~5dwh4myfEi4uc-OIHuGM8DYxG5RSq674QLDe~jK9RoWLAiwOzOaguhW06xhwCmNw-549rFmZDH2pdgg4MiDBnIiJ5wmUNXCGPm6gaib6EncVaCYihyyYvV--Q3MiMI5qalAKH-WSiWN-VYJCmpAiUJYz~LbRFmNo9qOQ__');
 }
 
 .decoration-slice{
@@ -2348,6 +2390,11 @@ video {
   padding-right: 2.5rem;
 }
 
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -2378,6 +2425,11 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .py-14{
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
@@ -2403,9 +2455,19 @@ video {
   padding-bottom: 8rem;
 }
 
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-9{
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
 }
 
 .py-\[12px\]{
@@ -2415,6 +2477,14 @@ video {
 
 .pb-10{
   padding-bottom: 2.5rem;
+}
+
+.pl-12{
+  padding-left: 3rem;
+}
+
+.pl-16{
+  padding-left: 4rem;
 }
 
 .pr-5{
@@ -2518,6 +2588,10 @@ video {
 
 .text-\[14px\]{
   font-size: 14px;
+}
+
+.text-\[16px\]{
+  font-size: 16px;
 }
 
 .text-\[18px\]{
@@ -3300,12 +3374,6 @@ video {
   content: var(--tw-content);
 }
 
-.hover\:scale-105:hover{
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .hover\:scale-110:hover{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
@@ -3378,8 +3446,16 @@ video {
     padding-left: 5rem;
   }
 
+  .sm\:pl-24{
+    padding-left: 6rem;
+  }
+
   .sm\:text-center{
     text-align: center;
+  }
+
+  .sm\:text-\[14px\]{
+    font-size: 14px;
   }
 
   .sm\:underline{
@@ -3407,6 +3483,10 @@ video {
 
   .md\:max-h-\[316px\]{
     max-height: 316px;
+  }
+
+  .md\:max-w-screen-md{
+    max-width: 768px;
   }
 
   .md\:grid-cols-3{
@@ -3492,12 +3572,20 @@ video {
     width: 567px;
   }
 
+  .lg\:max-w-36{
+    max-width: 9rem;
+  }
+
   .lg\:max-w-3xl{
     max-width: 48rem;
   }
 
   .lg\:max-w-\[471px\]{
     max-width: 471px;
+  }
+
+  .lg\:max-w-\[561px\]{
+    max-width: 561px;
   }
 
   .lg\:max-w-\[784px\]{
@@ -3508,6 +3596,10 @@ video {
     max-width: 980px;
   }
 
+  .lg\:max-w-sm{
+    max-width: 24rem;
+  }
+
   .lg\:shrink{
     flex-shrink: 1;
   }
@@ -3516,12 +3608,20 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .lg\:grid-cols-5{
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .lg\:items-center{
     align-items: center;
+  }
+
+  .lg\:gap-10{
+    gap: 2.5rem;
   }
 
   .lg\:gap-20{
@@ -3538,6 +3638,12 @@ video {
     margin-left: calc(7rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .lg\:space-x-5 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
@@ -3549,13 +3655,27 @@ video {
     padding-right: 0px;
   }
 
+  .lg\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .lg\:py-0{
     padding-top: 0px;
     padding-bottom: 0px;
   }
 
+  .lg\:py-3{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
   .lg\:text-center{
     text-align: center;
+  }
+
+  .lg\:text-right{
+    text-align: right;
   }
 }
 

@@ -1,22 +1,15 @@
-<?php get_header() ?>
 <?php
-require('views/global/hero.php');
-
-$user_id = get_the_author_meta('ID');
-
-
+$paged = (get_query_var('page')) ? get_query_var('page') : 1;
 $args = array(
     'post_type' => 'post',
     'post_status' => 'publish',
+    'order'    => 'DESC',
     'posts_per_page' => 9,
-    'author' => $user_id
+    'paged' => $paged // what page parameter
 );
 
 $result = new WP_Query($args);
-if ($result->have_posts()) :
-
-
-?>
+if ($result->have_posts()) : ?>
 
 
     <section class="w-full min-h-max bg-customWhite py-10">
@@ -35,5 +28,5 @@ if ($result->have_posts()) :
         </div>
     </section>
 
-<?php endif ?>
-<?php get_footer() ?>
+
+<?php endif; ?>

@@ -7,4 +7,8 @@
         require('page-training.php');
     }elseif(is_page('articles')){
         require('page-articles.php');
+    }elseif(is_page('contact')){
+        require('page-contact.php');
+    }elseif(is_page('blog')){
+        require('page-blog.php');
     }

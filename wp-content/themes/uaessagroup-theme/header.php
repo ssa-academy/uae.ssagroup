@@ -8,12 +8,14 @@
     <?php wp_head(); ?>
   </head>
   <body class="overflow-x-hidden">
-    <nav class="mx-auto <?= is_front_page() || is_page('Training')? 'w-full absolute left-1/2 -translate-x-1/2' : 'bg-customDark'?>">
+    <nav class="mx-auto <?= is_front_page() || is_author() || is_page(array('Training', 'Blog'))? 'w-full absolute left-1/2 -translate-x-1/2' : 'bg-customDark'?>">
       <!-- Flex Container For Nav Items -->
       <div class="lg:container flex items-center justify-between space-x-20 p-5">
         <!-- Logo -->
         <div class="z-auto">
-          <img class="h-14 inline" src="<?php echo get_template_directory_uri(); ?>/src/images/ssa-logo.png" alt="" id="logo" />
+          <a href="<?php echo esc_url( home_url() ); ?>">  
+            <img class="h-14 inline" src="<?php echo get_template_directory_uri(); ?>/src/images/ssa-logo.png" alt="" id="logo" />
+          </a>
         </div>
 
         <!-- Hamburger button -->
@@ -62,7 +64,7 @@
               </div>
             </li>
             <li>
-              <a href="articles" class="hover:text-customYellow <?= is_page('Articles') ? 'text-customYellow font-[700]' : ''?>">Articles</a>
+              <a href="articles" class="hover:text-customYellow <?= is_page('Articles') || is_author()? 'text-customYellow font-[700]' : ''?>">Articles</a>
             </li>
             <li>
               <a href="contact" class="hover:text-customYellow <?= is_page('Contact') ? 'text-customYellow font-[700]' : ''?>">Contact</a>
