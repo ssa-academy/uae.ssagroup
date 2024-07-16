@@ -79,6 +79,10 @@ const initApp = () => {
       },
     ],
   });
+
+  //pagination styling
+  $(".page-numbers.current").addClass("font-bold");
+  $("a.page-numbers").addClass("hover:underline");
 };
 
 document.addEventListener("DOMContentLoaded", initApp);

@@ -14,7 +14,7 @@
                     <h1 class="text-[40px] font-[700] leading-[50px] font-poppins"><?php the_title() ?></h1>
                     <p class="text-[14px] font-[400] leading-[22px] italic text-gray-400"><?php the_author_posts_link(); ?> • <?php the_time('F j, Y') ?></p>
                 </div>
-                <div class="grid gap-5">
+                <div class="grid gap-20">
                     <img src="<?= get_the_post_thumbnail_url(); ?>" class="max-h-96 object-cover w-full" alt="">
                     <div><?= the_content() ?></div>
                 </div>

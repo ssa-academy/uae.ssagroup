@@ -1,12 +1,13 @@
 <?php
 
-
+$paged = (get_query_var('paged')) ? absint(get_query_var('paged')) : 1;
 
 $args = array(
     'post_type' => $post ?? 'post',
     'post_status' => 'publish',
     'order'    => 'DESC',
     'posts_per_page' => 9,
+    'paged' => $paged,
     'author' => $user_id ?? ''
 
 );
@@ -32,7 +33,21 @@ if ($result->have_posts()) : ?>
                 </a>
             <?php endwhile; ?>
         </div>
+        <div class="container mt-10 flex justify-end px-5 gap-5 text-[14px] font-[400] leading-[22px]">
+            <?php
+            $big = 999999999;
+
+            echo $paginate = paginate_links(array(
+                'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
+                'format' => '?paged=%#%',
+                'current' => max(1, get_query_var('paged')),
+                'prev_next' => false,
+                'total' => $result->max_num_pages,
+            ));
+            ?>
+        </div>
     </section>
 
 
 <?php endif; ?>
+<?php wp_reset_postdata() ?>
