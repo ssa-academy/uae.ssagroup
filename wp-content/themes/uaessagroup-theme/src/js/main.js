@@ -29,7 +29,6 @@ const initApp = () => {
     const dropdownelement = document.getElementById(dropdownElementID);
     dropdownelement.classList.toggle("hidden");
     dropdownelement.classList.toggle(toggledClass);
-    console.log("hello");
   };
 
   hamburgBtn.addEventListener("click", () => {
@@ -42,9 +41,9 @@ const initApp = () => {
   servicesMenuBtn.addEventListener("click", () =>
     openDropdownElements("services-submenu", "block")
   );
-  servicesMenuMobile.addEventListener("click", () =>
-    openDropdownElements("services-submenu-mobile", "block")
-  );
+  // servicesMenuMobile.addEventListener("click", () =>
+  //   openDropdownElements("services-submenu-mobile", "block")
+  // );
   footerDropdown.addEventListener("click", () =>
     openDropdownElements("footer-dropdown-options", "block")
   );

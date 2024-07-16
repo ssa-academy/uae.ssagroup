@@ -1,3 +1,5 @@
 <?php
-    require('pages/partials-blog/hero.php');
-    require('global/article-grid-list.php');
+$heading = 'Blogs';
+
+require('global/hero.php');
+require('global/article-grid-list.php');
