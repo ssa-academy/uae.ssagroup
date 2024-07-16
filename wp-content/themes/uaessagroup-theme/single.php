@@ -15,8 +15,8 @@
                     <p class="text-[14px] font-[400] leading-[22px] italic text-gray-400"><?php the_author_posts_link(); ?> • <?php the_time('F j, Y') ?></p>
                 </div>
                 <div class="grid gap-5">
-                    <img src="<?= get_the_post_thumbnail_url(); ?>" alt="">
-                    <p><?= the_excerpt() ?></p>
+                    <img src="<?= get_the_post_thumbnail_url(); ?>" class="max-h-96 object-cover w-full" alt="">
+                    <div><?= the_content() ?></div>
                 </div>
             <?php } //end of while loop
             ?>
@@ -46,22 +46,6 @@
     </div>
 </section>
 
-<section>
-    <div class="max-w-6xl mx-auto text-center mb-40 px-10 pt-16">
-        <?php while (have_posts()) {
-            the_post();
-        ?>
-            <h3 class="mb-8 text-3xl font-bold text-customDark md:text-3xl"><?php the_title(); ?></h3>
-            <p class="max-w-3xl mx-auto mb-10 text-customYellow text-2xl">By <?php the_author_posts_link(); ?> <?php the_time('F j, Y') ?></p>
-            <!-- By <a href="<?php //echo get_author_posts_url(get_the_author_meta('ID'));
-                                ?>" class="text-customYellow max-w-3xl mx-auto mb-10"><?php //the_author();
-                                                                                                                                                ?></a> <?php //the_time('F j, Y'); 
-                                                                                                                                                                            ?> -->
-            <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" class="mx-auto my-16">
-        <?php } ?>
-        <p class="max-w-3xl mx-auto mb-10 text-2xl"><?php the_excerpt(); ?></p>
-        <h1>hello world</h1>
-    </div>
-</section>
+<?php require('views/global/ready-to-connect.php') ?>
 
 <?php get_footer() ?>

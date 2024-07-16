@@ -41,7 +41,7 @@ $accordions = [
                                     <h2 class="text-[18px] font-[700] leading-[30px]"><?= $accordion['title'] ?></h2>
                                     <p class="text-[12px] font-[400] leading-[18px] text-gray-400 italic"><?= $accordion['sub'] ?></p>
                                 </div>
-                                <div id="accordion-carret" class="transition ease duration-500 group-focus:text-white <?= $key === 0 ? 'rotate-180' : '' ?> ">
+                                <div id="accordion-carret" class="ease duration-500 group-focus:text-white <?= $key === 0 ? 'rotate-180' : '' ?> ">
                                     <i class="fas fa-chevron-down"></i>
                                 </div>
                             </div>

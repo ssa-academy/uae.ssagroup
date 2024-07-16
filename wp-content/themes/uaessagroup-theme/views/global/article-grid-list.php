@@ -1,11 +1,14 @@
 <?php
-$paged = (get_query_var('page')) ? get_query_var('page') : 1;
+
+
+
 $args = array(
-    'post_type' => 'post',
+    'post_type' => $post ?? 'post',
     'post_status' => 'publish',
     'order'    => 'DESC',
     'posts_per_page' => 9,
-    'paged' => $paged // what page parameter
+    'author' => $user_id ?? ''
+
 );
 
 $result = new WP_Query($args);
@@ -13,6 +16,9 @@ if ($result->have_posts()) : ?>
 
 
     <section class="w-full min-h-max bg-customWhite py-10">
+        <div class="container">'
+            <h1 class="text-[26px] font-[700] leading-[34px] font-poppins px-5 pb-10">All Articles </h1>
+        </div>
         <div class="container grid md:grid-cols-3 gap-10 auto-rows-fr px-5">
             <?php while ($result->have_posts()) :
                 $result->the_post(); ?>

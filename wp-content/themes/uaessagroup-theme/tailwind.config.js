@@ -40,9 +40,14 @@ module.exports = {
           "0%": { transform: "scaleY(0)" },
           "100%": { transform: "scaleY(1)" },
         },
+        "fade-in": {
+          "0%": { transform: "translateY(30px) scale(0.8)" },
+          "100%": { transform: "translateY(0px) scale(1)" },
+        },
       },
       animation: {
         "open-menu": "open-menu 0.3s ease forwards",
+        "fade-in": "fade-in 0.3s ease",
       },
     },
   },
