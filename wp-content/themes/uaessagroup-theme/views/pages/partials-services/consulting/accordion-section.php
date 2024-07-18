@@ -10,7 +10,7 @@ $accordions = [
             <li>Performance Management and HR Scorecard</li>
             <li>Learning and Development </li>
         </ul>',
-        'img' => 'https://s3-alpha-sig.figma.com/img/668b/c9d9/a2c0ae91ee47454f7184bfbb5d68beca?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dsE5V2f6Qaxu0wHTVVx1aruDJdcEsLh360NeYCiipFgEVbrOqqqG15HE7~qubHTqoIaNUxpzmEQ8l20jKdr3z6I64l2yVe~Ks-oSc1wUDDtzOF~mmeMJakt4NilCDSPwdcOkshGZ3JeL34gA0ds0qf0xVYgyUn8ZhfgeSV96ACWc9RgZPX1~UkOs9s9LjMXrm~3-yg-KPXxjLxbbp6SBFd7wxJBptb7a78WosSNsZZtGjgbW0qeFngHyIRGprfZawHAfP5ZOWAGBsTthAv45ihYZEY4AMz~U63Noiek9naH6E6XhnWvUBaBv~J5cd9LKpctc4BKtAmfwqdciUQEXKA__'
+        'img' => get_template_directory_uri() . "/src/images/consulting-services/human-capital.jfif"
     ],
     [
         'title' => 'Productivity and Quality Management',
@@ -21,7 +21,7 @@ $accordions = [
             <li>Total Quality Management</li>
             <li>Supply Chain Management</li>
         </ul>',
-        'img' => 'https://s3-alpha-sig.figma.com/img/668b/c9d9/a2c0ae91ee47454f7184bfbb5d68beca?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dsE5V2f6Qaxu0wHTVVx1aruDJdcEsLh360NeYCiipFgEVbrOqqqG15HE7~qubHTqoIaNUxpzmEQ8l20jKdr3z6I64l2yVe~Ks-oSc1wUDDtzOF~mmeMJakt4NilCDSPwdcOkshGZ3JeL34gA0ds0qf0xVYgyUn8ZhfgeSV96ACWc9RgZPX1~UkOs9s9LjMXrm~3-yg-KPXxjLxbbp6SBFd7wxJBptb7a78WosSNsZZtGjgbW0qeFngHyIRGprfZawHAfP5ZOWAGBsTthAv45ihYZEY4AMz~U63Noiek9naH6E6XhnWvUBaBv~J5cd9LKpctc4BKtAmfwqdciUQEXKA__'
+        'img' => get_template_directory_uri() . "/src/images/consulting-services/productivity-and-quality-management.jfif"
     ],
     [
         'title' => 'Organizational Development and Leadership',
@@ -33,7 +33,7 @@ $accordions = [
             <li>Total Quality Management</li>
             <li>Supply Chain Management</li>
         </ul>',
-        'img' => 'https://s3-alpha-sig.figma.com/img/668b/c9d9/a2c0ae91ee47454f7184bfbb5d68beca?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dsE5V2f6Qaxu0wHTVVx1aruDJdcEsLh360NeYCiipFgEVbrOqqqG15HE7~qubHTqoIaNUxpzmEQ8l20jKdr3z6I64l2yVe~Ks-oSc1wUDDtzOF~mmeMJakt4NilCDSPwdcOkshGZ3JeL34gA0ds0qf0xVYgyUn8ZhfgeSV96ACWc9RgZPX1~UkOs9s9LjMXrm~3-yg-KPXxjLxbbp6SBFd7wxJBptb7a78WosSNsZZtGjgbW0qeFngHyIRGprfZawHAfP5ZOWAGBsTthAv45ihYZEY4AMz~U63Noiek9naH6E6XhnWvUBaBv~J5cd9LKpctc4BKtAmfwqdciUQEXKA__'
+        'img' => get_template_directory_uri() . "/src/images/consulting-services/organizational-development.jfif"
     ],
     [
         'title' => 'Financial Management',
@@ -44,19 +44,19 @@ $accordions = [
             <li>Financial Assessment and Planning for Growth</li>
             <li>Planning and Budgeting</li>
         </ul>',
-        'img' => 'https://s3-alpha-sig.figma.com/img/668b/c9d9/a2c0ae91ee47454f7184bfbb5d68beca?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dsE5V2f6Qaxu0wHTVVx1aruDJdcEsLh360NeYCiipFgEVbrOqqqG15HE7~qubHTqoIaNUxpzmEQ8l20jKdr3z6I64l2yVe~Ks-oSc1wUDDtzOF~mmeMJakt4NilCDSPwdcOkshGZ3JeL34gA0ds0qf0xVYgyUn8ZhfgeSV96ACWc9RgZPX1~UkOs9s9LjMXrm~3-yg-KPXxjLxbbp6SBFd7wxJBptb7a78WosSNsZZtGjgbW0qeFngHyIRGprfZawHAfP5ZOWAGBsTthAv45ihYZEY4AMz~U63Noiek9naH6E6XhnWvUBaBv~J5cd9LKpctc4BKtAmfwqdciUQEXKA__'
+        'img' => get_template_directory_uri() . "/src/images/consulting-services/financial-management.jfif"
     ],
     [
         'title' => 'Strategic Management',
         'content' => '<p class="sm:text-[14px] text-[12px] font-[400] leading-[18px] text-customWhite pr-5 sm:pl-20 pl-12">Propel your business to new heights with tools that can help you achieve your goals and objectives. With Key Performance Indicators (KPIs) and effective platforms, SSA Group can help your business create a blueprint that is dynamic, progressive, and adaptive to disruptive business environments, securing your status as a cutting-edge enterprise.</p>
         <p class="sm:text-[14px] text-[12px] font-[400] leading-[18px] text-customWhite pr-5 sm:pl-20 pl-12 mt-5">Make better decisions today with thorough data analysis. Get a consultation now and we’ll walk you through all aspects of the strategic management process, including formulation, implementation, and result measurement. </p>',
-        'img' => 'https://s3-alpha-sig.figma.com/img/668b/c9d9/a2c0ae91ee47454f7184bfbb5d68beca?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dsE5V2f6Qaxu0wHTVVx1aruDJdcEsLh360NeYCiipFgEVbrOqqqG15HE7~qubHTqoIaNUxpzmEQ8l20jKdr3z6I64l2yVe~Ks-oSc1wUDDtzOF~mmeMJakt4NilCDSPwdcOkshGZ3JeL34gA0ds0qf0xVYgyUn8ZhfgeSV96ACWc9RgZPX1~UkOs9s9LjMXrm~3-yg-KPXxjLxbbp6SBFd7wxJBptb7a78WosSNsZZtGjgbW0qeFngHyIRGprfZawHAfP5ZOWAGBsTthAv45ihYZEY4AMz~U63Noiek9naH6E6XhnWvUBaBv~J5cd9LKpctc4BKtAmfwqdciUQEXKA__'
+        'img' => get_template_directory_uri() . "/src/images/consulting-services/strategic-management.jfif"
     ],
     [
         'title' => 'Entrepreneurship Development',
         'content' => '<p class="sm:text-[14px] text-[12px] font-[400] leading-[18px] text-customWhite pr-5 sm:pl-20 pl-12">Assess the effectiveness of your organization’s plans and get a tailored entrepreneurship framework that meets your needs. </p>
         <p class="sm:text-[14px] text-[12px] font-[400] leading-[18px] text-customWhite pr-5 sm:pl-20 pl-12 mt-5">SSA Group can help you design a distinctive structure for entrepreneurship, providing you with the methodologies and tools to stand out in this highly competitive business market and achieve business success. </p>',
-        'img' => 'https://s3-alpha-sig.figma.com/img/668b/c9d9/a2c0ae91ee47454f7184bfbb5d68beca?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dsE5V2f6Qaxu0wHTVVx1aruDJdcEsLh360NeYCiipFgEVbrOqqqG15HE7~qubHTqoIaNUxpzmEQ8l20jKdr3z6I64l2yVe~Ks-oSc1wUDDtzOF~mmeMJakt4NilCDSPwdcOkshGZ3JeL34gA0ds0qf0xVYgyUn8ZhfgeSV96ACWc9RgZPX1~UkOs9s9LjMXrm~3-yg-KPXxjLxbbp6SBFd7wxJBptb7a78WosSNsZZtGjgbW0qeFngHyIRGprfZawHAfP5ZOWAGBsTthAv45ihYZEY4AMz~U63Noiek9naH6E6XhnWvUBaBv~J5cd9LKpctc4BKtAmfwqdciUQEXKA__'
+        'img' => get_template_directory_uri() . "/src/images/consulting-services/entrep-management.jfif"
     ]
 ]
 
