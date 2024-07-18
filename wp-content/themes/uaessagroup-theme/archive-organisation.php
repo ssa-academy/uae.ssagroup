@@ -11,3 +11,4 @@ require('views/global/article-grid-list.php');
 
 
 <?php get_footer() ?>
+
