@@ -9,4 +9,3 @@
         </div>
     </div>
 </section>
-<?php echo get_template_directory() ?>

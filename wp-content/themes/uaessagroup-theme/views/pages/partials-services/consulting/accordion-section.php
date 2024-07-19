@@ -86,13 +86,13 @@ $accordions = [
                                     <?= $title ?>
                                 </h2>
                             </div>
-                            <div id="accordion-carret" class="transition ease duration-500 text-customWhite rotate-180 self-start">
+                            <div id="accordion-carret" class="transition ease duration-500 text-customWhite <?= $key === 0 ? 'rotate-180' : '' ?> self-start">
                                 <i class="fas fa-chevron-down"></i>
                             </div>
                         </div>
                         <div id="accordion-content" class="<?= $key === 0 ? 'max-h-screen' : '' ?> max-h-0 px-4 overflow-hidden ease duration-500 mb-4">
                             <?= $content ?>
-                            <img src="<?= $img ?>" class="object-cover max-h-64 w-full sm:pl-20 pl-12 my-5">
+                            <img src="<?= $img ?>" class="object-cover max-h-80 object-top w-full sm:pl-20 pl-12 my-5">
                         </div>
                     </div>
                     <hr class="px-6 border-customWhite">
