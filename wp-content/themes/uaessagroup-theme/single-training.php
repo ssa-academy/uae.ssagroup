@@ -9,7 +9,7 @@
 
             ?>
                 <div class="grid gap-3 justify-center text-center pb-12">
-                    <h1 class="text-[40px] font-[700] leading-[50px] font-poppins"><?php the_title() ?></h1>
+                    <h1 class="text-xl font-bold font-poppins"><?php the_title() ?></h1>
                 </div>
                 <div class="grid gap-20">
                     <img src="<?= get_the_post_thumbnail_url(); ?>" class="max-h-96 object-cover w-full" alt="">
@@ -19,7 +19,7 @@
             ?>
         </div>
         <div>
-            <h1 class="text-[26px] font-[700] leading-[34px] font-poppins">Other Consulting Program</h1>
+            <h1 class="text-lg font-bold font-poppins">Other Consulting Program</h1>
             <?php
             $trainingServices = new WP_Query(array(
                 'post_type' => 'post',
@@ -33,7 +33,7 @@
                     <div class="flex border-b border-customDark py-5 gap-5">
                         <img src="<?= get_the_post_thumbnail_url() ?>" class="aspect-square max-h-24 object-cover" alt="">
                         <div class="flex items-center">
-                            <h2 class="text-[14px] font-[700] leading-[24px] font-poppins line-clamp-3 overflow-hidden text-ellipsis"><?= the_title() ?></h2>
+                            <h2 class="text-sm font-bold font-poppins line-clamp-3 overflow-hidden text-ellipsis"><?= the_title() ?></h2>
                         </div>
                     </div>
                 </a>

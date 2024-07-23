@@ -42,7 +42,7 @@ $articles = [
 
 <section class="w-full min-h-max bg-customDark py-10">
     <div class="container xl:max-w-screen-2xl xl:px-14 px-5">
-        <p class="text-[26px] font-[700] leading-[34px] text-customWhite">Articles <a href="<?= is_front_page() ?  site_url('/blog') : site_url('/events') ?>"><span class="text-[14px] font-[400] leading-[22px] text-customYellow float-end underline italic">View all</span></a></p>
+        <p class="text-lg font-bold font-poppins text-customWhite">Articles <a href="<?= is_front_page() ?  site_url('/blog') : site_url('/events') ?>"><span class="text-sm font-normal text-customYellow float-end underline italic">View all</span></a></p>
 
         <!-- for organisation view all archive dont delete -->
         <!-- <p class="text-[26px] font-[700] leading-[34px] text-customWhite">Articles <a href="<?php //echo get_post_type_archive_link('organisation') 

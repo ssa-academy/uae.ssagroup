@@ -43,12 +43,12 @@
               )
               ?> -->
 
-        <ul class="flex item-center space-x-20 text-white">
+        <ul class="text-sm flex item-center space-x-20 text-white">
           <li>
-            <a href="<?php echo esc_url(home_url()); ?>" class="hover:text-customYellow <?= is_front_page() ? 'text-customYellow font-[700]' : '' ?>">About</a>
+            <a href="<?php echo esc_url(home_url()); ?>" class="hover:text-customYellow <?= is_front_page() ? 'text-customYellow font-bold' : '' ?>">About</a>
           </li>
           <li id="services-menu" class="relative">
-            <a class="hover:text-customYellow cursor-pointer <?= is_page('Consulting') || is_page('Training') ? 'text-customYellow font-[700]' : '' ?>">Services</a>
+            <a class="hover:text-customYellow cursor-pointer <?= is_page('Consulting') || is_page('Training') ? 'text-customYellow font-bold' : '' ?>">Services</a>
             <!-- services submenu -->
             <div id="services-submenu" class="absolute hidden bg-white rounded-md px-4 w-44 text-black mt-2 origin-top animate-open-menu">
               <ul>
@@ -65,10 +65,10 @@
             </div>
           </li>
           <li>
-            <a href="articles" class="hover:text-customYellow <?= is_page('Articles') || is_author() ? 'text-customYellow font-[700]' : '' ?>">Articles</a>
+            <a href="articles" class="hover:text-customYellow <?= is_page('Articles') || is_author() ? 'text-customYellow font-bold' : '' ?>">Articles</a>
           </li>
           <li>
-            <a href="contact" class="hover:text-customYellow <?= is_page('Contact') ? 'text-customYellow font-[700]' : '' ?>">Contact</a>
+            <a href="contact" class="hover:text-customYellow <?= is_page('Contact') ? 'text-customYellow font-bold' : '' ?>">Contact</a>
           </li>
         </ul>
       </div>
@@ -77,7 +77,7 @@
     <div id="mobile-menu" class="fixed top-0 bottom-0 bg-customDark w-full h-screen overflow-y-auto text-3xl hidden origin-top animate-open-menu flex-col lg:hidden z-10">
       <div class="grid">
         <div class="h-[96px]"></div>
-        <div class="min-h-max text-[18px] font-[700] leading-[28px]" aria-label="mobile">
+        <div class="min-h-max text-[18px] font-bold leading-[28px]" aria-label="mobile">
           <ul class="grid">
             <li class="p-10 md:pl-20 text-white border-b-2 border-customGray">
               <a href="<?php echo esc_url(home_url()); ?>">About</a>

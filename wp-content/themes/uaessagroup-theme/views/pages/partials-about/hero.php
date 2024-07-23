@@ -27,8 +27,8 @@ $accordions = [
 <section class="min-h-max bg-center bg-cover bg-fixed bg-hero-pattern">
     <div class="container xl:max-w-screen-2xl text-white mx-auto py-32 xl:grid xl:grid-cols-2 block">
         <div class="container mx-auto px-5 xl:max-w-xl xl:px-0">
-            <h1 class="text-[40px] font-[700] leading-[50px] font-poppins">Making Future-Proof Organizations Through Capacity and Capability Building</h1>
-            <a href="contact" class="border w-[201px] mt-10 py-4 px-2 block text-center">Contact Us</a>
+            <h1 class="text-xl font-bold font-poppins">Making Future-Proof Organizations Through Capacity and Capability Building</h1>
+            <a href="contact" class="font-semibold font-poppins border w-[201px] mt-10 py-4 px-2 block text-center">Contact Us</a>
         </div>
         <div class="container xl:max-w-lg">
             <div class="container mx-auto mt-10 xl:mt-5">
@@ -39,14 +39,14 @@ $accordions = [
                             <div id="accordion-title" class="group flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer">
                                 <div class="transition ease duration-500">
                                     <h2 class="text-[18px] font-[700] leading-[30px]"><?= $accordion['title'] ?></h2>
-                                    <p class="text-[12px] font-[400] leading-[18px] text-gray-400 italic"><?= $accordion['sub'] ?></p>
+                                    <p class="text-xs text-gray-400 italic"><?= $accordion['sub'] ?></p>
                                 </div>
                                 <div id="accordion-carret" class="ease duration-500 group-focus:text-white <?= $key === 0 ? 'rotate-180' : '' ?> ">
                                     <i class="fas fa-chevron-down"></i>
                                 </div>
                             </div>
                             <div id="accordion-content" class="<?= $key === 0 ? 'max-h-screen' : '' ?> max-h-0 px-4 overflow-hidden ease duration-500 mb-4">
-                                <p class="text-[12px] font-[400] leading-[18px] text-customWhite pr-5">
+                                <p class="text-xs text-customWhite pr-5">
                                     <?= $accordion['content'] ?><a href="<?= $accordion['url'] ?>"><span class="text-customYellow underline italic">Learn more.</span></a>
                                 </p>
                             </div>

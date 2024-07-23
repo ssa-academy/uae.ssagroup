@@ -44,7 +44,7 @@ $servicepageTrainings = new WP_Query(array(
         ?>
             <div class="p-2">
                 <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url(); ?>" class="md:max-h-64 object-cover" alt=""></a>
-                <p class="text-[22px] font-[700] leading-[30px] text-center p-3"><?php the_title(); ?></p>
+                <p class="text-[22px] font-bold leading-[30px] text-center p-3"><?php the_title(); ?></p>
             </div>
         <?php } // end of while loop
         ?>

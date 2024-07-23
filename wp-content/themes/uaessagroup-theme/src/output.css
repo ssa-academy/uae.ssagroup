@@ -1010,8 +1010,8 @@ video {
   max-height: 11rem;
 }
 
-.max-h-64{
-  max-height: 16rem;
+.max-h-80{
+  max-height: 20rem;
 }
 
 .max-h-96{
@@ -1020,10 +1020,6 @@ video {
 
 .max-h-screen{
   max-height: 100vh;
-}
-
-.max-h-80{
-  max-height: 20rem;
 }
 
 .min-h-96{
@@ -1126,6 +1122,10 @@ video {
 
 .border-separate{
   border-collapse: separate;
+}
+
+.origin-left{
+  transform-origin: left;
 }
 
 .origin-top{
@@ -2218,14 +2218,14 @@ video {
   background-color: rgb(31 31 31 / var(--tw-bg-opacity));
 }
 
-.bg-customGray2{
-  --tw-bg-opacity: 1;
-  background-color: rgb(176 175 173 / var(--tw-bg-opacity));
-}
-
 .bg-customWhite{
   --tw-bg-opacity: 1;
   background-color: rgb(250 249 246 / var(--tw-bg-opacity));
+}
+
+.bg-gray-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .bg-white{
@@ -2405,11 +2405,6 @@ video {
   padding-right: 1.5rem;
 }
 
-.px-\[40px\]{
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -2557,21 +2552,6 @@ video {
   font-family: Poppins, Arial, sans-serif;
 }
 
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-6xl{
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
 .text-\[12px\]{
   font-size: 12px;
 }
@@ -2600,17 +2580,32 @@ video {
   font-size: 26px;
 }
 
-.text-\[30px\]{
-  font-size: 30px;
+.text-lg{
+  font-size: 26px;
+  line-height: 34px;
 }
 
-.text-\[40px\]{
-  font-size: 40px;
+.text-md{
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.1px;
 }
 
 .text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+}
+
+.text-xl{
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.text-xs{
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
 }
 
 .font-\[400\]{
@@ -2631,6 +2626,10 @@ video {
 
 .font-normal{
   font-weight: 400;
+}
+
+.font-semibold{
+  font-weight: 600;
 }
 
 .uppercase{
@@ -2701,14 +2700,6 @@ video {
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
 }
 
-.leading-\[12px\]{
-  line-height: 12px;
-}
-
-.leading-\[18px\]{
-  line-height: 18px;
-}
-
 .leading-\[22px\]{
   line-height: 22px;
 }
@@ -2731,14 +2722,6 @@ video {
 
 .leading-\[34px\]{
   line-height: 34px;
-}
-
-.leading-\[40px\]{
-  line-height: 40px;
-}
-
-.leading-\[50px\]{
-  line-height: 50px;
 }
 
 .text-\[\#336699\]\/\[\.35\]{
@@ -3106,6 +3089,10 @@ video {
   transition-duration: 150ms;
 }
 
+.duration-300{
+  transition-duration: 300ms;
+}
+
 .duration-500{
   transition-duration: 500ms;
 }
@@ -3446,10 +3433,6 @@ video {
 
   .sm\:text-center{
     text-align: center;
-  }
-
-  .sm\:text-\[14px\]{
-    font-size: 14px;
   }
 
   .sm\:underline{
