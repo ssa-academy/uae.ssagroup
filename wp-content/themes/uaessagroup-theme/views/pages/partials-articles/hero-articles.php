@@ -44,14 +44,15 @@
                     <?php while ($article_next_three->have_posts()) {
                         $article_next_three->the_post();
                     ?>
-                        <div class="flex border-b border-customWhite py-5 gap-5 lg:py-0">
-                            <img src="<?php the_post_thumbnail_url(); ?>" class="aspect-square lg:aspect-auto max-h-32 object-cover" alt="">
-                            <div class="flex flex-col gap-5">
-                                <p class="text-sm text-customGray2 italic"><?php the_time('F j, Y') ?></p>
-                                <h2 class="text-[20px] font-bold leading-[26px] font-poppins text-customWhite line-clamp-3 overflow-hidden text-ellipsis"><?= the_title() ?></h2>
+                        <a href="<?php the_permalink() ?>">
+                            <div class=" flex border-b border-customWhite py-5 gap-5 lg:py-0">
+                                <img src="<?php the_post_thumbnail_url(); ?>" class="aspect-square lg:aspect-auto max-h-32 object-cover" alt="">
+                                <div class="flex flex-col gap-5">
+                                    <p class="text-sm text-customGray2 italic"><?php the_time('F j, Y') ?></p>
+                                    <h2 class="text-[20px] font-bold leading-[26px] font-poppins text-customWhite line-clamp-3 overflow-hidden text-ellipsis"><?= the_title() ?></h2>
+                                </div>
                             </div>
-                        </div>
-
+                        </a>
                 <?php }
                 }
                 wp_reset_postdata();

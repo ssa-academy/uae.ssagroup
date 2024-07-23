@@ -3,13 +3,17 @@
 $accordions = [
     [
         'title' => 'Human Capital Development',
-        'content' => '<p class="text-xs text-customWhite pr-5 sm:pl-20 pl-12">Maximize your employees\' full potential by enhancing their skills to achieve organizational performance. Get a consultation from us and explore any of these areas:</p>
-        <ul class="text-xs text-customWhite pr-5 sm:pl-24 pl-16 mt-5 list-disc">
-            <li>Comprehensive Human Resource Management</li>
-            <li>Job Evaluation and Salary Structure</li>
-            <li>Performance Management and HR Scorecard</li>
-            <li>Learning and Development </li>
-        </ul>',
+        'content' => '
+        <div class="md:max-w-2xl">
+            <p class="text-xs text-customWhite pr-5 sm:pl-20 pl-12">Maximize your employees\' full potential by enhancing their skills to achieve organizational performance. Get a consultation from us and explore any of these areas:</p>
+            <ul class="text-xs text-customWhite pr-5 sm:pl-24 pl-16 mt-5 list-disc">
+                <li>Comprehensive Human Resource Management</li>
+                <li>Job Evaluation and Salary Structure</li>
+                <li>Performance Management and HR Scorecard</li>
+                <li>Learning and Development </li>
+            </ul>
+        </div>
+        ',
         'img' => get_template_directory_uri() . "/src/images/consulting-services/human-capital.jfif"
     ],
     [
@@ -79,7 +83,7 @@ $accordions = [
                     $img = $accordion['img'];
                     ?>
                     <div id="accordion" class="group outline-none accordion-section" tabindex="<?= $num ?>">
-                        <div id="accordion-title" class="group flex justify-between py-3 items-center transition ease duration-500 cursor-pointer">
+                        <div id="accordion-title" class="group flex justify-between py-10 items-center transition ease duration-500 cursor-pointer">
                             <div class="transition ease duration-500">
                                 <h2 class="text-md text-customWhite inline-flex items-center mr-5">
                                     <span class="text-xs text-gray-400 italic sm:mr-20 mr-12 self-start"><?= sprintf('%02d', $num) ?></span>
@@ -90,9 +94,9 @@ $accordions = [
                                 <i class="fas fa-chevron-down"></i>
                             </div>
                         </div>
-                        <div id="accordion-content" class="<?= $key === 0 ? 'max-h-screen' : '' ?> max-h-0 px-4 overflow-hidden ease duration-500 mb-4">
+                        <div id="accordion-content" class="<?= $key === 0 ? 'max-h-screen' : '' ?> max-h-0 px-4 overflow-hidden ease duration-500">
                             <?= $content ?>
-                            <img src="<?= $img ?>" class="object-cover max-h-80 object-top w-full sm:pl-20 pl-12 my-5">
+                            <img src="<?= $img ?>" class="object-cover max-h-80 object-top w-full sm:pl-20 pl-12 mb-10 mt-5">
                         </div>
                     </div>
                     <hr class="px-6 border-customWhite">

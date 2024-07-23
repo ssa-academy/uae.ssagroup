@@ -845,6 +845,10 @@ video {
   margin-top: 2rem;
 }
 
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -2460,6 +2464,11 @@ video {
   padding-bottom: 12px;
 }
 
+.py-24{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -3462,8 +3471,20 @@ video {
     max-height: 316px;
   }
 
+  .md\:max-w-lg{
+    max-width: 32rem;
+  }
+
   .md\:max-w-screen-md{
     max-width: 768px;
+  }
+
+  .md\:max-w-2xl{
+    max-width: 42rem;
+  }
+
+  .md\:max-w-3xl{
+    max-width: 48rem;
   }
 
   .md\:grid-cols-3{
