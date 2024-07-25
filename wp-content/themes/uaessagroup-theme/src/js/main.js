@@ -32,6 +32,8 @@ const initApp = () => {
   };
 
   hamburgBtn.addEventListener("click", () => {
+    const hide = document.querySelectorAll("#accordion-carret");
+    hide.forEach((item) => item.classList.toggle("-z-10"));
     openDropdownElements("mobile-menu", "flex");
     hamburgBtn.classList.toggle("toggle-btn");
     if (window.innerWidth < 1020) {

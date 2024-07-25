@@ -1,19 +1,19 @@
 <?php
 $accordions = [
     [
-        'title' => 'Service Category - 1',
+        'title' => 'Consulting',
         'sub' => 'See beyond limitations',
         'content' => 'As part of our dedication to supporting businesses from start to finish, we provide various consulting services, focusing on the needs of our clients while generating new ideas, creating efficient systems, and developing excellent, scalable solutions that move businesses forward. ',
         'url' => ''
     ],
     [
-        'title' => 'Service Category - 2',
+        'title' => 'Training',
         'sub' => 'See beyond limitations',
         'content' => 'Committed to promoting lifelong learning, we provide a wide range of learner-centric training services, from entry-level to executives, to help them be more competitive, improve performance and productivity, and become agile to changing business conditions and customer needs. ',
         'url' => ''
     ],
     [
-        'title' => 'Service Category - 3',
+        'title' => 'Innovations',
         'sub' => 'See beyond limitations',
         'content' => 'From automating repetitive tasks to enhancing employee performance through customized workplace training, we exist to inspire businesses around the world to harness the power of technology and innovate, providing accessible applications to empower businesses to become future-ready.',
         'url' => ''
