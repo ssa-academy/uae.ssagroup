@@ -23,6 +23,7 @@ module.exports = {
       md: ["20px", { lineHeight: "22px", letterSpacing: "0.1px" }],
       lg: ["26px", { lineHeight: "34px" }],
       xl: ["40px", { lineHeight: "50px" }],
+      xxl: ["80px"],
     },
     fontFamily: {
       poppins: ["Poppins", "Arial", "sans-serif"],

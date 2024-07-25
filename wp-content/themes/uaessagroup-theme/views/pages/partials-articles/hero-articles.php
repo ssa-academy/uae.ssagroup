@@ -30,7 +30,7 @@
             </div>
 
             <!-- REST OF THE ARTICLE -->
-            <div class="grid lg:col-span-2 lg:gap-8">
+            <div class="grid lg:col-span-2 lg:gap-5">
                 <?php
                 $article_next_three = new WP_Query(array(
                     'post_type' => 'post',
@@ -44,8 +44,8 @@
                     <?php while ($article_next_three->have_posts()) {
                         $article_next_three->the_post();
                     ?>
-                        <a href="<?php the_permalink() ?>">
-                            <div class=" flex border-b border-customWhite py-5 gap-5 lg:py-0">
+                        <a class="border-b border-customWhite" href="<?php the_permalink() ?>">
+                            <div class=" flex py-5 gap-5 lg:py-0">
                                 <img src="<?php the_post_thumbnail_url(); ?>" class="aspect-square lg:aspect-auto max-h-32 object-cover" alt="">
                                 <div class="flex flex-col gap-5">
                                     <p class="text-sm text-customGray2 italic"><?php the_time('F j, Y') ?></p>
