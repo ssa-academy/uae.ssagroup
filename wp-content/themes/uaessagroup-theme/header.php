@@ -53,10 +53,10 @@
             <div id="services-submenu" class="absolute hidden bg-white rounded-md px-4 w-44 text-black mt-2 origin-top animate-open-menu">
               <ul>
                 <li class="py-2 my-2 border-b-2">
-                  <a href="consulting">Consulting</a>
+                  <a href="<?php echo esc_url(home_url()); ?>/consulting">Consulting</a>
                 </li>
                 <li class="py-2 my-2">
-                  <a href="training">Training</a>
+                  <a href="<?php echo esc_url(home_url()); ?>/training">Training</a>
                 </li>
                 <li class="py-2 my-2 border-t-2">
                   <a href="https://innovations.ssagroup.com/" target="_blank">Innovations</a>
@@ -65,10 +65,10 @@
             </div>
           </li>
           <li>
-            <a href="articles" class="hover:text-customYellow <?= is_page('Articles') || is_author() ? 'text-customYellow font-bold' : '' ?>">Articles</a>
+            <a href="<?php echo esc_url(home_url()); ?>/articles" class="hover:text-customYellow <?= is_page('Articles') || is_author() ? 'text-customYellow font-bold' : '' ?>">Articles</a>
           </li>
           <li>
-            <a href="contact" class="hover:text-customYellow <?= is_page('Contact') ? 'text-customYellow font-bold' : '' ?>">Contact</a>
+            <a href="<?php echo esc_url(home_url()); ?>/contact" class="hover:text-customYellow <?= is_page('Contact') ? 'text-customYellow font-bold' : '' ?>">Contact</a>
           </li>
         </ul>
       </div>
@@ -88,20 +88,20 @@
               </div>
               <div id="accordion-content" class="font-normal pt-5 px-5 max-h-0 overflow-hidden duration-500">
                 <ul class="space-y-3">
-                  <li><a href="consulting">Consulting</a></li>
-                  <li><a href="training">Training</a></li>
+                  <li><a href="<?php echo esc_url(home_url()); ?>/consulting">Consulting</a></li>
+                  <li><a href="<?php echo esc_url(home_url()); ?>/training">Training</a></li>
                   <li><a href="https://innovations.ssagroup.com/" target="_blank">Innovations</a></li>
                 </ul>
               </div>
             </li>
             <li class="p-10 md:pl-20 text-white border-b-2 border-customGray">
-              <a href="articles">Articles</a>
+              <a href="<?php echo esc_url(home_url()); ?>/articles">Articles</a>
               <!-- dont delete the commendted a tag -->
               <!-- <a href="<?php //if (get_post_type() == 'post') echo 'class="hover:customYellow"'
                             ?>">Articles</a> -->
             </li>
             <li class="p-10 md:pl-20 text-white border-b-2 border-customGray">
-              <a href="contact">Contact</a>
+              <a href="<?php echo esc_url(home_url()); ?>/contact">Contact</a>
             </li>
           </ul>
         </div>

@@ -687,6 +687,10 @@ video {
   isolation: auto;
 }
 
+.-z-10{
+  z-index: -10;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -979,6 +983,10 @@ video {
 
 .h-\[0\.18rem\]{
   height: 0.18rem;
+}
+
+.h-\[50vh\]{
+  height: 50vh;
 }
 
 .h-\[96px\]{
@@ -2612,6 +2620,10 @@ video {
   letter-spacing: 0.1px;
 }
 
+.text-xxl{
+  font-size: 80px;
+}
+
 .font-\[400\]{
   font-weight: 400;
 }
@@ -3619,8 +3631,8 @@ video {
     gap: 5rem;
   }
 
-  .lg\:gap-8{
-    gap: 2rem;
+  .lg\:gap-5{
+    gap: 1.25rem;
   }
 
   .lg\:space-x-28 > :not([hidden]) ~ :not([hidden]){
