@@ -4,21 +4,6 @@ $testimonials = [
         'quote' => 'Khalifa Fund is extremely excited to launch this innovative and resourceful tool [SME Rating]. Our objective is to give our SMEs the opportunity to excel further through the provision of a platform that will allow them to grow and improve.',
         'name' => 'Mouza Obaid Al Nasri',
         'position' => 'Khalifa Fund for Enterprise Development'
-    ],
-    [
-        'quote' => 'BLAHAL H AHSAHDLAW Khalifa Fund is extremely excited to launch this innovative and resourceful tool [SME Rating]. Our objective is to give our SMEs the opportunity to excel further through the provision of a platform that will allow them to grow and improve.',
-        'name' => 'test namei',
-        'position' => 'dsawdwaxccxcxcxc'
-    ],
-    [
-        'quote' => 'mreol ipsum dolor sit amet consectetur adipisicing elit. Suscipit officiis quae atque? Nostrum, quidem. Aliquid, recusandae mollitia, obcaecati, fugiat voluptates voluptatem laborum expedita sapiente tempora nulla impedit magnam quam?',
-        'name' => 'taseasda ',
-        'position' => 'dsadsadasdaw'
-    ],
-    [
-        'quote' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nesciunt laboriosam nihil placeat aliquid labore libero, vitae iure voluptatum quod cupiditate, at quis maiores? Porro voluptate debitis aperiam incidunt.',
-        'name' => 'mike MZNahjsdaw',
-        'position' => 'test position'
     ]
 ];
 
@@ -31,7 +16,7 @@ $testimonials = [
         <div class="container mx-auto xl:max-w-xl xl:px-0 text-customWhite space-y-3">
             <h1 class="text-xl font-bold font-poppins lg:w-60">From our Partners</h1>
             <p class="text-sm">Read what our clients say about our products and services.</p>
-            <div class="text-2xl hidden lg:block pt-10 px-3 space-x-8">
+            <div class="<?php count($testimonials) == 1 ? "hidden" : "" ?> text-2xl hidden lg:block pt-10 px-3 space-x-8">
                 <button class="prev-button w-10 h-10 border-2 rounded-full hover:text-customYellow hover:border-customYellow" type="button">
                     <i class="fa-solid fa-arrow-left"></i>
                 </button>
@@ -52,7 +37,7 @@ $testimonials = [
                     </li>
                 <?php endforeach ?>
             </ul>
-            <div class="text-2xl inline-flex float-end space-x-8 lg:hidden">
+            <div class="<?php count($testimonials) == 1 ? "hidden" : "" ?> text-2xl inline-flex float-end space-x-8 lg:hidden">
                 <button class="prev-button w-10 h-10 border-2 rounded-full hover:text-customYellow hover:border-customYellow" type="button">
                     <i class="fa-solid fa-arrow-left"></i>
                 </button>
