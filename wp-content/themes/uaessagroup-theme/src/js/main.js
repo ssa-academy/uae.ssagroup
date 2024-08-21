@@ -89,4 +89,5 @@ const initApp = () => {
   $("a.page-numbers").addClass("hover:underline");
 };
 
+AOS.init();
 document.addEventListener("DOMContentLoaded", initApp);

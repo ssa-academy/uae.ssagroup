@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <?php wp_head(); ?>
 </head>
 
@@ -50,7 +51,7 @@
           <li id="services-menu" class="relative">
             <a class="hover:text-customYellow cursor-pointer <?= is_page('Consulting') || is_page('Training') ? 'text-customYellow font-bold' : '' ?>">Services</a>
             <!-- services submenu -->
-            <div id="services-submenu" class="absolute hidden bg-white rounded-md px-4 w-44 text-black mt-2 origin-top animate-open-menu">
+            <div id="services-submenu" class="absolute hidden bg-white rounded-md px-4 w-44 text-black mt-2 origin-top animate-open-menu z-50">
               <ul>
                 <li class="py-2 my-2 border-b-2">
                   <a href="<?php echo esc_url(home_url()); ?>/consulting">Consulting</a>

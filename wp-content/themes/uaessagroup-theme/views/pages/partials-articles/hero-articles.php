@@ -6,7 +6,7 @@
     <div class="container px-5">
         <div class="grid lg:grid-cols-5 lg:gap-20 gap-16">
             <!-- INITIAL ARTICLE -->
-            <div class="grid gap-5 lg:col-span-3">
+            <div class="grid gap-5 lg:col-span-3" data-aos="fade-down-left">
                 <?php
                 $article_1st = new WP_Query(array(
                     'post_type' => 'post',
@@ -30,7 +30,7 @@
             </div>
 
             <!-- REST OF THE ARTICLE -->
-            <div class="grid lg:col-span-2 lg:gap-5">
+            <div class="grid lg:col-span-2 lg:gap-5" data-aos="fade-down-left" data-aos-delay="200">
                 <?php
                 $article_next_three = new WP_Query(array(
                     'post_type' => 'post',

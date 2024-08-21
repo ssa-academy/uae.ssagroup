@@ -42,7 +42,7 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern":
-          "linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url('./images/src/hero-background-image.jpg')",
+          "linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url('../src/images/hero-background-image.jpg')",
       },
       keyframes: {
         "open-menu": {

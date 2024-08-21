@@ -43,10 +43,10 @@
         <div id="footer-dropdown-options" class="absolute hidden bg-white rounded-md px-4 w-44 text-black mt-2 ml-2 origin-top animate-open-menu">
           <ul>
             <li class="py-2 my-2 border-b-2">
-              <a href="">SSA Group</a>
+              <a href="https://philippines.ssagroup.com/" target="_blank">SSA Group</a>
             </li>
             <li class="py-2 my-2">
-              <a href="">SSA Philippines</a>
+              <a href="https://ssagroup.com/" target="_blank">SSA Philippines</a>
             </li>
           </ul>
         </div>
@@ -68,6 +68,7 @@
   </section>
 
   <script src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <?php wp_footer(); ?>
   </body>
 

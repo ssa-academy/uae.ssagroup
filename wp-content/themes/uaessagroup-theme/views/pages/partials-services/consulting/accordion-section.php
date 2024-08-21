@@ -84,7 +84,7 @@ $accordions = [
             <h2 class="text-lg font-bold font-poppins">Consulting Services to Transform Your Business</h2>
         </div>
         <div class="lg:grid lg:grid-cols-5 mt-10">
-            <div class="col-start-2 col-span-4">
+            <div class="col-start-2 col-span-4" data-aos="fade-left">
                 <?php $num = 1 ?>
                 <?php foreach ($accordions as $key => $accordion) : ?>
                     <?php

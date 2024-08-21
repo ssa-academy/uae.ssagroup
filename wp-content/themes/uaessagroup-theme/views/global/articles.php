@@ -48,7 +48,7 @@ $articles = [
         <!-- <p class="text-[26px] font-[700] leading-[34px] text-customWhite">Articles <a href="<?php //echo get_post_type_archive_link('organisation') 
                                                                                                     ?>"><span class="text-[14px] font-[400] leading-[22px] text-customYellow float-end underline italic">View all</span></a></p> -->
     </div>
-    <div class="container article-slider xl:max-w-screen-2xl xl:px-8 my-10">
+    <div class="container article-slider xl:max-w-screen-2xl xl:px-8 my-10" data-aos="zoom-in">
         <?php /*foreach($articles as $article){
             $thumbnail = $article['thumbnail'];
             $pill = $article['pill'];
