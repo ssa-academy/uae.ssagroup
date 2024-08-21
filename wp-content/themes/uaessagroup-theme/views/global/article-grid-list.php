@@ -24,7 +24,7 @@ if ($result->have_posts()) : ?>
             <?php while ($result->have_posts()) :
                 $result->the_post(); ?>
                 <a href="<?php the_permalink(); ?>">
-                    <div class="group py-2 grid gap-2 overflow-hidden">
+                    <div class="group py-2 grid gap-2 overflow-hidden" data-aos="fade-up">
                         <img src="<?php the_post_thumbnail_url(); ?>" class="md:max-h-64 w-full object-cover transition-transform duration-500 ease-in-out transform group-hover:scale-105" alt="">
                         <p class="text-sm italic text-gray-400"><?php the_time('F j, Y') ?></p>
                         <h1 class="text-md font-bold font-poppins"><?= the_title(); ?></h1>
