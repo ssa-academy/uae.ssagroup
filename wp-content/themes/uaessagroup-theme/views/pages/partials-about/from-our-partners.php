@@ -27,7 +27,7 @@ $testimonials = [
         </div>
 
         <div class="container xl:pr-14 text-customWhite">
-            <p class="text-6xl"><i class="fa-solid fa-quote-left"></i></p>
+            <p class="text-[39px]"><i class="fa-solid fa-quote-left"></i></p>
             <ul class="testimonials mt-8">
                 <?php foreach ($testimonials as $testimonial) : ?>
                     <li>

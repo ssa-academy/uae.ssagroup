@@ -16,7 +16,7 @@
       <!-- Logo -->
       <div class="z-auto">
         <a href="<?php echo esc_url(home_url()); ?>">
-          <img class="h-14 inline" src="<?php echo get_template_directory_uri(); ?>/src/images/ssa-logo.png" alt="" id="logo" />
+          <img class="h-10 inline" src="<?php echo get_template_directory_uri(); ?>/src/images/ssa-international-logo-white.png" alt="" id="logo" />
         </a>
       </div>
 
@@ -86,9 +86,9 @@
               <div id="accordion-title">
                 <p>Services <button id="accordion-carret" class="inline-flex float-end"><i class="fas fa-chevron-down "></i></button></p>
               </div>
-              <div id="accordion-content" class="font-normal pt-5 px-5 max-h-0 overflow-hidden duration-500">
-                <ul class="space-y-3">
-                  <li><a href="<?php echo esc_url(home_url()); ?>/consulting">Consulting</a></li>
+              <div id="accordion-content" class="font-normal px-5 max-h-0 overflow-hidden duration-500">
+                <ul class="space-y-6">
+                  <li class="pt-5"><a href="<?php echo esc_url(home_url()); ?>/consulting">Consulting</a></li>
                   <li><a href="<?php echo esc_url(home_url()); ?>/training">Training</a></li>
                   <li><a href="https://innovations.ssagroup.com/" target="_blank">Innovations</a></li>
                 </ul>

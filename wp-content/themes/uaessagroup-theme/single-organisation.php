@@ -1,8 +1,8 @@
 <?php get_header() ?>
 
 <section class="min-h-max bg-customWhite py-12">
-    <div class="container px-5 space-y-5 lg:grid lg:grid-cols-3 lg:gap-10">
-        <div class="grid gap-5 lg:col-span-2">
+    <div class="container px-5 space-y-5 lg:grid lg:grid-cols-4 lg:gap-14">
+        <div class="grid gap-5 lg:col-span-3">
             <?php
             while (have_posts()) {
                 the_post();
@@ -18,7 +18,7 @@
             <?php } //end of while loop
             ?>
         </div>
-        <div>
+        <div class="lg:max-w-80">
             <h1 class="text-lg font-bold font-poppins">Training Services</h1>
             <?php
             $trainingServices = new WP_Query(array(

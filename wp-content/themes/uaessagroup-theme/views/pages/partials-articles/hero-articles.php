@@ -1,10 +1,10 @@
 <section class="min-h-max bg-customDark py-20">
-    <div class="container px-5 pb-10 text-customWhite space-y-5">
+    <div class="container px-5 pb-10 text-customWhite space-y-5 mb-10 lg:mb-0">
         <h1 class="text-xl font-bold font-poppins">Insights</h1>
         <p class="text-sm lg:max-w-[784px]">Explore our current perspectives on the most important topics in the world of business and technology. </p>
     </div>
     <div class="container px-5">
-        <div class="grid lg:grid-cols-5 lg:gap-20 gap-10">
+        <div class="grid lg:grid-cols-5 lg:gap-20 gap-16">
             <!-- INITIAL ARTICLE -->
             <div class="grid gap-5 lg:col-span-3">
                 <?php

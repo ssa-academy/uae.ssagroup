@@ -6,15 +6,15 @@
         </div>
         <form action="" class="grid gap-5 lg:block lg:space-x-5 md:max-w-screen-md">
             <input type="text" placeholder="Your Email or Phone Number" class="w-full lg:max-w-[561px] lg:max-w-auto
-            bg-customDark2 text-center text-[16px] font-[400] leading-[22px] text-white py-4 border border-customGray outline-none">
-            <button type="submit" class="w-full lg:max-w-36 bg-customWhite text-[16px] font-semibold leading-[22px] text-customDark py-4">Submit</button>
+            bg-customDark2 text-left text-[16px] font-[400] leading-[22px] text-white p-4 border border-customGray outline-none">
+            <button type="submit" class="w-full lg:max-w-36 bg-customWhite text-[16px] font-semibold leading-[22px] text-customDark py-4 hover:text-customYellow hover:border hover:border-customYellow">Submit</button>
             <p class="text-center lg:text-right lg:px-10 lg:py-3 text-sm italic text-gray-400 px-3">By clicking the submit button, you agree to our terms and privacy policy.</p>
         </form>
     </div>
     <div class="container px-5 mt-10">
         <div class="flex items-center gap-10 border-b border-customWhite py-9">
             <p class="text-sm italic text-gray-400 min-w-14">Contact</p>
-            <p class="text-sm font-bold text-customWhite">+65 6632</p>
+            <p class="text-sm font-bold text-customWhite">+971 50 429 3546</p>
         </div>
         <div class="flex items-center gap-10 border-b border-customWhite py-9">
             <p class="text-sm italic text-gray-400 min-w-14">Email</p>
@@ -22,7 +22,7 @@
         </div>
         <div class="flex items-start gap-10 border-b border-customWhite py-9">
             <p class="text-sm italic text-gray-400 min-w-14 align-top">Address</p>
-            <p class="text-sm font-bold text-customWhite lg:max-w-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit Cras varius arcu elit, ut lacinia nunc egestas nec.</p>
+            <p class="text-sm font-bold text-customWhite lg:max-w-sm">SSA Group International Pte. Ltd. (UAE)Level 17, Office Tower, The World Trade Center Al Markaziya, Abu Dhabi P.O. Box 387.</p>
         </div>
     </div>
 </section>
