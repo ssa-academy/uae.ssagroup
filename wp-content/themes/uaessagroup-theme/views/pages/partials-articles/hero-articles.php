@@ -1,5 +1,17 @@
+<?php
+
+$article_1st = new WP_Query(array(
+    'post_type' => 'post',
+    'posts_per_page' => 1,
+
+)); ?>
+
 <section class="min-h-max bg-customDark py-20">
-    <div class="container px-5 pb-10 text-customWhite space-y-5 mb-10 lg:mb-0">
+    <?php ?>
+    <div class="container px-5 <?= !empty($article_1st->have_posts()) ? 'hidden' : 'grid justify-center items-center' ?>">
+        <img src="<?php echo get_template_directory_uri(); ?>/src/images/stay-tuned.png" alt="stay tuned" class="object-cover w-full max-h-[450px]">
+    </div>
+    <div class="container px-5 pb-10 text-customWhite space-y-5 mb-10 lg:mb-0 <?= empty($article_1st->have_posts()) ? 'hidden' : '' ?>">
         <h1 class="text-xl font-bold font-poppins">Insights</h1>
         <p class="text-sm lg:max-w-[784px]">Explore our current perspectives on the most important topics in the world of business and technology. </p>
     </div>
@@ -7,14 +19,7 @@
         <div class="grid lg:grid-cols-5 lg:gap-20 gap-16">
             <!-- INITIAL ARTICLE -->
             <div class="grid gap-5 lg:col-span-3" data-aos="fade-down-left">
-                <?php
-                $article_1st = new WP_Query(array(
-                    'post_type' => 'post',
-                    'posts_per_page' => 1,
-
-                ));
-
-                if ($article_1st->have_posts()) {
+                <?php if ($article_1st->have_posts()) {
                     $article_1st->the_post();
                 ?>
                     <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url(); ?>" class="object-cover max-h-44 w-full md:max-h-[316px]" alt=""></a>

@@ -1033,6 +1033,10 @@ video {
   max-height: 24rem;
 }
 
+.max-h-\[450px\]{
+  max-height: 450px;
+}
+
 .max-h-screen{
   max-height: 100vh;
 }
@@ -2657,8 +2661,8 @@ video {
 }
 
 .text-sm{
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 15px;
+  line-height: 23px;
   letter-spacing: 0.1px;
 }
 
@@ -2668,7 +2672,7 @@ video {
 }
 
 .text-xs{
-  font-size: 12px;
+  font-size: 13px;
   line-height: 18px;
   letter-spacing: 0.1px;
 }

@@ -16,7 +16,7 @@ $accordions = [
         'title' => 'Innovations',
         'sub' => 'See beyond limitations',
         'content' => 'From automating repetitive tasks to enhancing employee performance through customized workplace training, we exist to inspire businesses around the world to harness the power of technology and innovate, providing accessible applications to empower businesses to become future-ready. ',
-        'url' => ''
+        'url' => 'https://innovations.ssagroup.com/'
     ]
 ]
 
@@ -30,7 +30,7 @@ $accordions = [
             <h1 class="text-xl font-bold font-poppins">Making Future-Proof Organizations Through Capacity and Capability Building</h1>
             <a href="contact" class="font-semibold font-poppins border w-[201px] mt-10 py-4 px-2 block text-center hover:text-customYellow hover:border-customYellow">Contact Us</a>
         </div>
-        <div class="container xl:max-w-lg">
+        <div class="container xl:max-w-lg animate-fade-in">
             <div class="container mx-auto mt-10 xl:mt-5">
                 <div class="overflow-hidden">
                     <!-- accordion-tab  -->
@@ -46,8 +46,10 @@ $accordions = [
                                 </div>
                             </div>
                             <div id="accordion-content" class="<?= $key === 0 ? 'max-h-screen' : '' ?> max-h-0 px-4 overflow-hidden ease duration-500 mb-4">
-                                <p class="text-xs text-customWhite pr-5">
-                                    <?= $accordion['content'] ?><a href="<?= $accordion['url'] ?>"><span class="text-customYellow hover:underline italic">Learn more.</span></a>
+                                <p class="text-sm text-customWhite pr-5">
+                                    <?= $accordion['content'] ?><a href="<?= $accordion['url'] ?>" <?php if ($key === 2) {
+                                                                                                        echo 'target="_blank"';
+                                                                                                    } ?>><span class="text-customYellow hover:underline italic">Learn more.</span></a>
                                 </p>
                             </div>
                         </div>
