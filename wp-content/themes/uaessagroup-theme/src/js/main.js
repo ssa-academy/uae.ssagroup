@@ -21,14 +21,40 @@ const initApp = () => {
       });
       content.classList.toggle("max-h-screen");
       carret.classList.toggle("rotate-180");
+      // Scroll to the accordion title
+
+      setTimeout(() => {
+        btn.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 500);
     });
   });
 
   //dropdown menus
   const openDropdownElements = (dropdownElementID, toggledClass = "block") => {
-    const dropdownelement = document.getElementById(dropdownElementID);
-    dropdownelement.classList.toggle("hidden");
-    dropdownelement.classList.toggle(toggledClass);
+    const dropdownElement = document.getElementById(dropdownElementID);
+
+    if (dropdownElement) {
+      // Toggle visibility of the dropdown
+      const isHidden = dropdownElement.classList.contains("hidden");
+      dropdownElement.classList.toggle("hidden", !isHidden);
+      dropdownElement.classList.toggle(toggledClass, isHidden);
+
+      // If the dropdown is now visible, add a click listener to the document
+      if (isHidden) {
+        const handleClickOutside = (event) => {
+          if (
+            !dropdownElement.contains(event.target) &&
+            !dropdownElement.classList.contains("hidden")
+          ) {
+            dropdownElement.classList.add("hidden");
+            dropdownElement.classList.remove(toggledClass);
+            document.removeEventListener("click", handleClickOutside); // Clean up the event listener
+          }
+        };
+
+        document.addEventListener("click", handleClickOutside);
+      }
+    }
   };
 
   hamburgBtn.addEventListener("click", () => {
@@ -40,15 +66,17 @@ const initApp = () => {
       document.body.classList.toggle("overflow-hidden");
     }
   });
-  servicesMenuBtn.addEventListener("click", () =>
-    openDropdownElements("services-submenu", "block")
-  );
+  servicesMenuBtn.addEventListener("click", (event) => {
+    event.stopPropagation();
+    openDropdownElements("services-submenu", "block");
+  });
   // servicesMenuMobile.addEventListener("click", () =>
   //   openDropdownElements("services-submenu-mobile", "block")
   // );
-  footerDropdown.addEventListener("click", () =>
-    openDropdownElements("footer-dropdown-options", "block")
-  );
+  footerDropdown.addEventListener("click", (event) => {
+    event.stopPropagation();
+    openDropdownElements("footer-dropdown-options", "block");
+  });
 
   //hero testimonial slider - "from-our-partners"
   $(".testimonials").slick({
