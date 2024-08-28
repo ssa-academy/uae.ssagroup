@@ -11,9 +11,9 @@
                 <div class="grid gap-3 justify-center text-center pb-12">
                     <h1 class="text-xl font-bold font-poppins"><?php the_title() ?></h1>
                 </div>
-                <div class="grid gap-20">
+                <div class="grid">
                     <img src="<?= get_the_post_thumbnail_url(); ?>" class="max-h-96 object-cover w-full" alt="">
-                    <div class="py-12"><?= the_content() ?></div>
+                    <div class="py-20"><?= the_content() ?></div>
                 </div>
             <?php } //end of while loop
             ?>
@@ -31,7 +31,7 @@
             ?>
                 <a href="<?= the_permalink(); ?>">
                     <div class="flex border-b border-customDark py-5 gap-5">
-                        <img src="<?= get_the_post_thumbnail_url() ?>" class="aspect-square max-h-24 object-cover" alt="">
+                        <img src="<?= get_the_post_thumbnail_url() ?>" class="aspect-square max-h-24 object-cover duration-300 ease-in-out transform hover:scale-105" alt="">
                         <div class="flex items-center">
                             <h2 class="text-sm font-bold font-poppins line-clamp-3 overflow-hidden text-ellipsis"><?= the_title() ?></h2>
                         </div>
