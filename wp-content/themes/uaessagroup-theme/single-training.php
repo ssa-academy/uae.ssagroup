@@ -19,11 +19,11 @@
             ?>
         </div>
         <div class="lg:max-w-80">
-            <h1 class="text-lg font-bold font-poppins">Other Consulting Program</h1>
+            <h1 class="text-lg font-bold font-poppins">Other Training Services</h1>
             <?php
             $trainingServices = new WP_Query(array(
-                'post_type' => 'post',
-                'posts_per_page' => 6
+                'post_type' => 'training',
+                'posts_per_page' => 7
             ));
 
             while ($trainingServices->have_posts()) {

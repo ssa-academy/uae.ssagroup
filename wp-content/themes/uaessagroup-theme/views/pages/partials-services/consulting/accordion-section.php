@@ -79,8 +79,8 @@ $accordions = [
 
 
 <section class="w-full min-h-max bg-customDark">
-    <div class="container lg:max-w-[980px] xl:max-w-[1280px] mx-auto px-5 lg:px-0 py-10">
-        <div class="text-customWhite xl:px-5">
+    <div class="container mx-auto px-5 lg:px-14 py-10">
+        <div class="text-customWhite">
             <h2 class="text-lg font-bold font-poppins">Consulting Services to Transform Your Business</h2>
         </div>
         <div class="lg:grid lg:grid-cols-5 mt-10">
