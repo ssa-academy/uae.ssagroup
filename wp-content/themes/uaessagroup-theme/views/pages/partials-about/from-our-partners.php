@@ -12,7 +12,7 @@ $testimonials = [
 
 
 <section class="w-full min-h-max bg-customDark">
-    <div class="container xl:max-w-screen-2xl py-20 lg:grid lg:grid-cols-2 px-5 sm:px-0 space-y-10 lg:space-y-0">
+    <div class="container xl:max-w-screen-2xl py-20 lg:grid lg:grid-cols-2 px-5 lg:px-10 sm:px-0 space-y-10 lg:space-y-0">
         <div class="container mx-auto xl:max-w-xl xl:px-0 text-customWhite space-y-3" data-aos="fade-up">
             <h1 class="text-xl font-bold font-poppins lg:w-60">From our Partners</h1>
             <p class="text-sm">Read what our clients say about our products and services.</p>

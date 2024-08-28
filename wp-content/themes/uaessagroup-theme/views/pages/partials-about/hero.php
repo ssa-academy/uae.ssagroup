@@ -25,7 +25,7 @@ $accordions = [
 
 
 <section class="min-h-max bg-center bg-cover bg-fixed bg-hero-pattern">
-    <div class="container xl:max-w-screen-2xl text-white mx-auto py-32 xl:grid xl:grid-cols-2 block">
+    <div class="container xl:max-w-screen-2xl text-white mx-auto py-32 xl:grid xl:grid-cols-2 block lg:pl-10">
         <div class="container mx-auto px-5 xl:max-w-xl xl:px-0">
             <h1 class="text-xl font-bold font-poppins">Making Future-Proof Organizations Through Capacity and Capability Building</h1>
             <a href="contact" class="font-semibold font-poppins border w-[201px] mt-10 py-4 px-2 block text-center hover:text-customYellow hover:border-customYellow">Contact Us</a>
@@ -39,7 +39,6 @@ $accordions = [
                             <div id="accordion-title" class="group flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer">
                                 <div class="transition ease duration-500">
                                     <h2 class="text-[18px] font-[700] leading-[30px]"><?= $accordion['title'] ?></h2>
-                                    <p class="text-xs text-gray-400 italic"><?= $accordion['sub'] ?></p>
                                 </div>
                                 <div id="accordion-carret" class="ease duration-500 group-focus:text-white <?= $key === 0 ? 'rotate-180' : '' ?> ">
                                     <i class="fas fa-chevron-down"></i>

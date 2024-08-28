@@ -3762,12 +3762,30 @@ video {
     padding-bottom: 0.75rem;
   }
 
+  .lg\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .lg\:px-14{
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
+  .lg\:pl-10{
+    padding-left: 2.5rem;
+  }
+
   .lg\:text-center{
     text-align: center;
   }
 
   .lg\:text-right{
     text-align: right;
+  }
+
+  .lg\:text-justify{
+    text-align: justify;
   }
 }
 

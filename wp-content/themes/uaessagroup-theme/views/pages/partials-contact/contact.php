@@ -22,7 +22,7 @@
         </div>
         <div class="flex items-start gap-10 border-b border-customWhite py-9">
             <p class="text-sm italic text-gray-400 min-w-14 align-top">Address</p>
-            <p class="text-sm font-bold text-customWhite lg:max-w-sm">SSA Group International Pte. Ltd. (UAE)Level 17, Office Tower, The World Trade Center Al Markaziya, Abu Dhabi P.O. Box 387.</p>
+            <p class="text-sm font-bold text-customWhite lg:max-w-sm">Level 17, Office Tower, The World Trade Center Al Markaziya, Abu Dhabi P.O. Box 387.</p>
         </div>
     </div>
 </section>
