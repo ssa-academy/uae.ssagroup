@@ -43,8 +43,9 @@ $servicepageTrainings = new WP_Query(array(
             $servicepageTrainings->the_post();
         ?>
             <div class="p-2" data-aos="fade-up">
-                <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url(); ?>" class="md:max-h-64 object-cover" alt=""></a>
-                <p class="text-[22px] font-bold leading-[30px] text-center p-3"><?php the_title(); ?></p>
+                <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url(); ?>" class="md:max-h-64 object-cover transition-transform duration-500 ease-in-out transform hover:scale-105" alt="">
+                    <p class="text-[22px] font-bold leading-[30px] text-center p-3"><?php the_title(); ?></p>
+                </a>
             </div>
         <?php } // end of while loop
         ?>
