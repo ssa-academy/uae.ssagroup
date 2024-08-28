@@ -1,46 +1,17 @@
 <?php
-$articles = [
-    [
-        'description' => 'Recently opened in 2022, SSA Group’s office in UAE was established with the goal of providing high-quality business consulting services and human capital development throughout the region.',
-        'pill' => '. the_title(); .',
-        'date' => 'June 25, 2024',
-        'thumbnail' => 'https://s3-alpha-sig.figma.com/img/04a0/cf9c/8736a0f9b272b299ee363c98bee53ea5?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=i2UOQdnYYrW1fqI5FbuGTElB8Xv0zhivroPs5ESsYfaohEd2Re6Ka0wtZKYIBmIHBpSUq70R3sc0Ll7BwVIb5E4J~6ELShAhi5Ba3Uj85OrEB3WKo5MabWehkLZZLQAhjINMQJmJhK22GiVXoQdho~NpNzIXYjLjos5WJqOwJeZJkAeBD92~EciMor4YOnStRubbwu~ZQXnLxsxs~BZqCblvAryJKigLsZnXku47erteEqhUGDXSNjvOBembtlyRtNZIddmMP1~Q9t9ggLGRtA-92lR~hl3-lSNW6~UAdsrKcJjH-hpLdHq07I~MA~gEIKi-R3XvOQKZXYsk5w2dSA__'
-    ],
-    [
-        'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum minus culpa repellendus excepturi veritatis suscipit. Iusto nemo illo quibusdam deserunt.',
-        'pill' => 'Consulting',
-        'date' => 'June 26, 2024',
-        'thumbnail' => 'https://s3-alpha-sig.figma.com/img/04a0/cf9c/8736a0f9b272b299ee363c98bee53ea5?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=i2UOQdnYYrW1fqI5FbuGTElB8Xv0zhivroPs5ESsYfaohEd2Re6Ka0wtZKYIBmIHBpSUq70R3sc0Ll7BwVIb5E4J~6ELShAhi5Ba3Uj85OrEB3WKo5MabWehkLZZLQAhjINMQJmJhK22GiVXoQdho~NpNzIXYjLjos5WJqOwJeZJkAeBD92~EciMor4YOnStRubbwu~ZQXnLxsxs~BZqCblvAryJKigLsZnXku47erteEqhUGDXSNjvOBembtlyRtNZIddmMP1~Q9t9ggLGRtA-92lR~hl3-lSNW6~UAdsrKcJjH-hpLdHq07I~MA~gEIKi-R3XvOQKZXYsk5w2dSA__'
-    ],
-    [
-        'description' => ' BLAH BLAHRecently opened in 2022, SSA Group’s office in UAE was established with the goal of providing high-quality business consulting services and human capital development throughout the region.',
-        'pill' => 'Training',
-        'date' => 'June 27, 2024',
-        'thumbnail' => 'https://s3-alpha-sig.figma.com/img/04a0/cf9c/8736a0f9b272b299ee363c98bee53ea5?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=i2UOQdnYYrW1fqI5FbuGTElB8Xv0zhivroPs5ESsYfaohEd2Re6Ka0wtZKYIBmIHBpSUq70R3sc0Ll7BwVIb5E4J~6ELShAhi5Ba3Uj85OrEB3WKo5MabWehkLZZLQAhjINMQJmJhK22GiVXoQdho~NpNzIXYjLjos5WJqOwJeZJkAeBD92~EciMor4YOnStRubbwu~ZQXnLxsxs~BZqCblvAryJKigLsZnXku47erteEqhUGDXSNjvOBembtlyRtNZIddmMP1~Q9t9ggLGRtA-92lR~hl3-lSNW6~UAdsrKcJjH-hpLdHq07I~MA~gEIKi-R3XvOQKZXYsk5w2dSA__'
-    ],
-    [
-        'description' => 'Recently opened in 2022, SSA Group’s office in UAE was established with the goal of providing high-quality business consulting services and human capital development throughout the region.',
-        'pill' => 'Innovations',
-        'date' => 'June 25, 2024',
-        'thumbnail' => 'https://s3-alpha-sig.figma.com/img/04a0/cf9c/8736a0f9b272b299ee363c98bee53ea5?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=i2UOQdnYYrW1fqI5FbuGTElB8Xv0zhivroPs5ESsYfaohEd2Re6Ka0wtZKYIBmIHBpSUq70R3sc0Ll7BwVIb5E4J~6ELShAhi5Ba3Uj85OrEB3WKo5MabWehkLZZLQAhjINMQJmJhK22GiVXoQdho~NpNzIXYjLjos5WJqOwJeZJkAeBD92~EciMor4YOnStRubbwu~ZQXnLxsxs~BZqCblvAryJKigLsZnXku47erteEqhUGDXSNjvOBembtlyRtNZIddmMP1~Q9t9ggLGRtA-92lR~hl3-lSNW6~UAdsrKcJjH-hpLdHq07I~MA~gEIKi-R3XvOQKZXYsk5w2dSA__'
-    ],
-    [
-        'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum minus culpa repellendus excepturi veritatis suscipit. Iusto nemo illo quibusdam deserunt.',
-        'pill' => 'Consulting',
-        'date' => 'June 26, 2024',
-        'thumbnail' => 'https://s3-alpha-sig.figma.com/img/04a0/cf9c/8736a0f9b272b299ee363c98bee53ea5?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=i2UOQdnYYrW1fqI5FbuGTElB8Xv0zhivroPs5ESsYfaohEd2Re6Ka0wtZKYIBmIHBpSUq70R3sc0Ll7BwVIb5E4J~6ELShAhi5Ba3Uj85OrEB3WKo5MabWehkLZZLQAhjINMQJmJhK22GiVXoQdho~NpNzIXYjLjos5WJqOwJeZJkAeBD92~EciMor4YOnStRubbwu~ZQXnLxsxs~BZqCblvAryJKigLsZnXku47erteEqhUGDXSNjvOBembtlyRtNZIddmMP1~Q9t9ggLGRtA-92lR~hl3-lSNW6~UAdsrKcJjH-hpLdHq07I~MA~gEIKi-R3XvOQKZXYsk5w2dSA__'
-    ],
-    [
-        'description' => ' BLAH BLAHRecently opened in 2022, SSA Group’s office in UAE was established with the goal of providing high-quality business consulting services and human capital development throughout the region.',
-        'pill' => 'Training',
-        'date' => 'June 27, 2024',
-        'thumbnail' => 'https://s3-alpha-sig.figma.com/img/04a0/cf9c/8736a0f9b272b299ee363c98bee53ea5?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=i2UOQdnYYrW1fqI5FbuGTElB8Xv0zhivroPs5ESsYfaohEd2Re6Ka0wtZKYIBmIHBpSUq70R3sc0Ll7BwVIb5E4J~6ELShAhi5Ba3Uj85OrEB3WKo5MabWehkLZZLQAhjINMQJmJhK22GiVXoQdho~NpNzIXYjLjos5WJqOwJeZJkAeBD92~EciMor4YOnStRubbwu~ZQXnLxsxs~BZqCblvAryJKigLsZnXku47erteEqhUGDXSNjvOBembtlyRtNZIddmMP1~Q9t9ggLGRtA-92lR~hl3-lSNW6~UAdsrKcJjH-hpLdHq07I~MA~gEIKi-R3XvOQKZXYsk5w2dSA__'
-    ],
-]
+$servicepageOrganisations = new WP_Query(array(
+    'post_type' => 'organisation'
+));
 ?>
 
 
-<section class="w-full min-h-max bg-customDark py-10">
+<section class="w-full min-h-max bg-customDark py-10 
+<?php if (is_front_page() and empty(have_posts())) {
+    echo 'hidden';
+} elseif (is_page(array('consulting', 'training')) and empty($servicepageOrganisations->have_posts())) {
+    echo 'hidden';
+} ?>
+">
     <div class="container xl:max-w-screen-2xl xl:px-14 px-5">
         <p class="text-lg font-bold font-poppins text-customWhite">Articles <a href="<?= is_front_page() ?  site_url('/blog') : site_url('/organisation') ?>"><span class="text-sm font-normal text-customYellow float-end hover:underline italic">View all</span></a></p>
 
