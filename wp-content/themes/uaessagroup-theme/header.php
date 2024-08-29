@@ -83,7 +83,7 @@
             <li class="p-10 md:pl-20 text-white border-b-2 border-customGray">
               <a href="<?php echo esc_url(home_url()); ?>">About</a>
             </li>
-            <li id="accordion" class="p-10 md:pl-20 text-white border-b-2 border-customGray">
+            <li id="accordion" class="p-10 md:pl-20 text-white border-b-2 border-customGray noscroll">
               <div id="accordion-title">
                 <p>Services <button id="accordion-carret" class="inline-flex float-end"><i class="fas fa-chevron-down "></i></button></p>
               </div>

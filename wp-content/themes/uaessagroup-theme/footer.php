@@ -53,9 +53,9 @@
       </div>
     </div>
 
-    <div class="w-full border-t-[1px]">
+    <div class="w-full border-t-[1px] px-5">
       <div class="container flex flex-col items-center md:flex-row md:justify-between py-10 space-y-3 md:space-y-0">
-        <p class="text-customWhite">© 2024 SSA Group International Pte. Ltd. (UAE). All rights reserved.</p>
+        <p class="text-customWhite text-center lg:text-left">© 2024 SSA Group International Pte. Ltd. (UAE). All rights reserved.</p>
         <div class="flex flex-col items-center md:flex-row md:space-x-8">
           <p class="text-customGray2">Terms & Privacy</p>
           <div class="text-customWhite text-2xl space-x-8 space-y-3 md:space-y-0">

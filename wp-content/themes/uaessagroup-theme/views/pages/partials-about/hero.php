@@ -35,7 +35,7 @@ $accordions = [
                 <div class="overflow-hidden">
                     <!-- accordion-tab  -->
                     <?php foreach ($accordions as $key => $accordion) : ?>
-                        <div id="accordion" class="group outline-none accordion-section" tabindex="1">
+                        <div id="accordion" class="group outline-none accordion-section noscroll" tabindex="1">
                             <div id="accordion-title" class="group flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer">
                                 <div class="transition ease duration-500">
                                     <h2 class="text-[18px] font-[700] leading-[30px]"><?= $accordion['title'] ?></h2>
