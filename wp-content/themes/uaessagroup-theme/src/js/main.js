@@ -23,6 +23,13 @@ const initApp = () => {
       carret.classList.toggle("rotate-180");
       // Scroll to the accordion title
 
+      // Check if the parent is a ul with id 'mobile-menu-list'
+      const parent = accordion.closest("ul");
+      if (accordion.classList.contains("noscroll")) {
+        // Do not execute scrollIntoView if parent is the mobile menu list
+        return;
+      }
+
       setTimeout(() => {
         btn.scrollIntoView({ behavior: "smooth", block: "start" });
       }, 500);
@@ -58,9 +65,12 @@ const initApp = () => {
   };
 
   hamburgBtn.addEventListener("click", () => {
+    const mobileMenu = document.getElementById("mobile-menu");
     const hide = document.querySelectorAll("#accordion-carret");
     hide.forEach((item) => item.classList.toggle("-z-10"));
-    openDropdownElements("mobile-menu", "flex");
+    // openDropdownElements("mobile-menu", "flex");
+    mobileMenu.classList.toggle("hidden");
+    mobileMenu.classList.toggle("flex");
     hamburgBtn.classList.toggle("toggle-btn");
     if (window.innerWidth < 1020) {
       document.body.classList.toggle("overflow-hidden");
