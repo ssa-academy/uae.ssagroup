@@ -10,7 +10,7 @@
             <a href="<?php echo esc_url(home_url()); ?>/consulting">Consulting</a>
           </li>
           <li class="hover:scale-110 origin-left transition-all duration-300 ease">
-            <a href="https://innovations.ssagroup.com/">Innovations</a>
+            <a href="https://innovations.ssagroup.com/" target="_blank">Innovations</a>
           </li>
         </ul>
       </div>
@@ -21,7 +21,7 @@
             <a href="<?php echo esc_url(home_url()); ?>">About Us</a>
           </li>
           <li class="hover:scale-110 origin-left transition-all duration-300 ease">
-            <a href="<?php echo esc_url(home_url()); ?>/blog">Articles</a>
+            <a href="<?php echo esc_url(home_url()); ?>/articles">Articles</a>
           </li>
           <li class="hover:scale-110 origin-left transition-all duration-300 ease">
             <a href="<?php echo esc_url(home_url()); ?>/contact">Contact</a>
