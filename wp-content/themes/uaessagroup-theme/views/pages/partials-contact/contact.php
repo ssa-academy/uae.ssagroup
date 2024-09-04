@@ -33,28 +33,60 @@
 
 <style>
     /* styles ng contact form - 7 */
-.wpcf7-not-valid-tip {
-    color: white !important;
-}
+    .wpcf7-form>p {
+        display: grid;
+        gap: 1.25rem;
+    }
 
-.wpcf7-response-output {
-    color: white !important;
-}
+    .wpcf7-not-valid-tip {
+        color: white !important;
+    }
 
-.wpcf7-submit {
-    background-color: #ffffff; /* Background color */
-    color: #000000; /* Text color */
-    border: 2px solid #000000; /* Border color */
-    padding: 10px 20px; /* Padding around the text */
-    font-size: 16px; /* Font size */
-    font-weight: bold; /* Font weight */
-    cursor: pointer; /* Cursor change on hover */
-}
+    .wpcf7-response-output {
+        color: white !important;
+    }
 
-/* eto style sa hover */
-.wpcf7-submit:hover {
-    background-color: #000000; 
-    color: #ffffff; 
-    border: 2px solid #ffffff; 
-}
+    .wpcf7-email {
+        width: 100%;
+        background-color: #1f1f1f;
+        text-align: left;
+        font-size: 16px;
+        color: #FAF9F6;
+        padding: 1rem;
+        border: 2px solid #2d3335;
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+    }
+
+    .wpcf7-submit {
+        width: 100%;
+        background-color: #FAF9F6;
+        font-size: 16px;
+        font-weight: 600;
+        color: #121212;
+        padding: 1rem 0;
+        border: 1px solid white;
+    }
+
+    /* eto style sa hover */
+    .wpcf7-submit:hover {
+        color: #fe9e14;
+        border: 1px solid #fe9e14;
+    }
+
+    @media (min-width:1024px) {
+        .wpcf7-form>p {
+            display: block;
+        }
+
+        .wpcf7-email {
+            max-width: 561px;
+            padding-left: 2rem;
+        }
+
+        .wpcf7-submit {
+            max-width: 9rem;
+            margin-left: 1.25rem;
+        }
+    }
 </style>
